@@ -4,108 +4,36 @@
 <property name="name" value="AlzProject.AlzheimerManagement-taskform.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
-<field position="57" name="mmse4_date" type="InputDate" id="1333677207">
+<field position="0" name="diagnosis1_date" type="InputDate" id="41030176">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;date (mmse4)quot;"/>
+<property name="label" value="quot;enquot;,quot;date (diagnosis1)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value=""/>
-<property name="outputBinding" value="mmse4/date"/>
+<property name="outputBinding" value="diagnosis1/date"/>
 <property name="fieldClass" value="java.util.Date"/>
 </field>
-<field position="56" name="mmse3_value" type="InputTextFloat" id="1053138629">
+<field position="1" name="diagnosis1_value" type="InputText" id="1477758386">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;value (mmse3)quot;"/>
+<property name="label" value="quot;enquot;,quot;value (diagnosis1)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value=""/>
-<property name="outputBinding" value="mmse3/value"/>
-<property name="fieldClass" value="java.lang.Float"/>
-</field>
-<field position="54" name="mmse3_date" type="InputDate" id="310400273">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;date (mmse3)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="mmse3/date"/>
-<property name="fieldClass" value="java.util.Date"/>
-</field>
-<field position="66" name="patient_diagnoses" type="MultipleSubform" id="1363309737">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;diagnoses (patient)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="patient/diagnoses"/>
-<property name="fieldClass" value="java.util.List"/>
-</field>
-<field position="51" name="mmse2_date" type="InputDate" id="1469187380">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;date (mmse2)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="mmse2/date"/>
-<property name="fieldClass" value="java.util.Date"/>
-</field>
-<field position="12" name="examination2_date" type="InputDate" id="22462212">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;date (examination2)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="examination2/date"/>
-<property name="fieldClass" value="java.util.Date"/>
-</field>
-<field position="9" name="examination10_date" type="InputDate" id="1494249030">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;date (examination10)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="examination10/date"/>
-<property name="fieldClass" value="java.util.Date"/>
-</field>
-<field position="67" name="patient_firstName" type="InputText" id="1901881077">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;firstName (patient)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="patient/firstName"/>
+<property name="outputBinding" value="diagnosis1/value"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="80" name="symptom2_date" type="InputDate" id="1845954246">
+<field position="2" name="diagnosis2_date" type="InputDate" id="1503060374">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;date (symptom2)quot;"/>
+<property name="label" value="quot;enquot;,quot;date (diagnosis2)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value=""/>
-<property name="outputBinding" value="symptom2/date"/>
+<property name="outputBinding" value="diagnosis2/date"/>
 <property name="fieldClass" value="java.util.Date"/>
 </field>
-<field position="7" name="examination1_name" type="InputText" id="2066112044">
+<field position="3" name="diagnosis2_value" type="InputText" id="1342673968">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;name (examination1)quot;"/>
+<property name="label" value="quot;enquot;,quot;value (diagnosis2)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value=""/>
-<property name="outputBinding" value="examination1/name"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="85" name="treatment1_name" type="InputText" id="170608529">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;name (treatment1)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="treatment1/name"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="40" name="iadl1_name" type="InputText" id="1886304413">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;name (iadl1)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="iadl1/name"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="61" name="npi_name" type="InputText" id="697224639">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;name (npi)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="npi/name"/>
+<property name="outputBinding" value="diagnosis2/value"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
 <field position="4" name="diagnosis3_date" type="InputDate" id="751902575">
@@ -116,13 +44,13 @@
 <property name="outputBinding" value="diagnosis3/date"/>
 <property name="fieldClass" value="java.util.Date"/>
 </field>
-<field position="62" name="npi_value" type="InputTextFloat" id="835587799">
+<field position="5" name="diagnosis3_value" type="InputText" id="1989883800">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;value (npi)quot;"/>
+<property name="label" value="quot;enquot;,quot;value (diagnosis3)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value=""/>
-<property name="outputBinding" value="npi/value"/>
-<property name="fieldClass" value="java.lang.Float"/>
+<property name="outputBinding" value="diagnosis3/value"/>
+<property name="fieldClass" value="java.lang.String"/>
 </field>
 <field position="6" name="examination1_date" type="InputDate" id="1465696721">
 <property name="fieldRequired" value="false"/>
@@ -132,197 +60,13 @@
 <property name="outputBinding" value="examination1/date"/>
 <property name="fieldClass" value="java.util.Date"/>
 </field>
-<field position="0" name="diagnosis1_date" type="InputDate" id="41030176">
+<field position="7" name="examination1_name" type="InputText" id="2066112044">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;date (diagnosis1)quot;"/>
+<property name="label" value="quot;enquot;,quot;name (examination1)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value=""/>
-<property name="outputBinding" value="diagnosis1/date"/>
-<property name="fieldClass" value="java.util.Date"/>
-</field>
-<field position="49" name="mmse1_name" type="InputText" id="775262786">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;name (mmse1)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="mmse1/name"/>
+<property name="outputBinding" value="examination1/name"/>
 <property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="58" name="mmse4_name" type="InputText" id="1218686434">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;name (mmse4)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="mmse4/name"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="32" name="examination8_result" type="InputText" id="1957626186">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;result (examination8)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="examination8/result"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="76" name="plan2_date" type="InputDate" id="1588990493">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;date (plan2)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="plan2/date"/>
-<property name="fieldClass" value="java.util.Date"/>
-</field>
-<field position="22" name="examination5_name" type="InputText" id="368349524">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;name (examination5)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="examination5/name"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="29" name="examination7_result" type="InputText" id="1998242145">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;result (examination7)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="examination7/result"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="46" name="iadl3_name" type="InputText" id="1950277030">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;name (iadl3)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="iadl3/name"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="72" name="patient_treatments" type="MultipleSubform" id="2113138950">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;treatments (patient)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="patient/treatments"/>
-<property name="fieldClass" value="java.util.List"/>
-</field>
-<field position="44" name="iadl2_value" type="InputTextFloat" id="1690975710">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;value (iadl2)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="iadl2/value"/>
-<property name="fieldClass" value="java.lang.Float"/>
-</field>
-<field position="20" name="examination4_result" type="InputText" id="1516505528">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;result (examination4)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="examination4/result"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="74" name="plan1_date" type="InputDate" id="1987148980">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;date (plan1)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="plan1/date"/>
-<property name="fieldClass" value="java.util.Date"/>
-</field>
-<field position="43" name="iadl2_name" type="InputText" id="1308212297">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;name (iadl2)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="iadl2/name"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="89" name="treatment3_name" type="InputText" id="2107239472">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;name (treatment3)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="treatment3/name"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="13" name="examination2_name" type="InputText" id="2052806548">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;name (examination2)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="examination2/name"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="18" name="examination4_date" type="InputDate" id="951138220">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;date (examination4)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="examination4/date"/>
-<property name="fieldClass" value="java.util.Date"/>
-</field>
-<field position="41" name="iadl1_value" type="InputTextFloat" id="1800951689">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;value (iadl1)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="iadl1/value"/>
-<property name="fieldClass" value="java.lang.Float"/>
-</field>
-<field position="52" name="mmse2_name" type="InputText" id="1830624763">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;name (mmse2)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="mmse2/name"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="26" name="examination6_result" type="InputText" id="28972301">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;result (examination6)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="examination6/result"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="30" name="examination8_date" type="InputDate" id="810904812">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;date (examination8)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="examination8/date"/>
-<property name="fieldClass" value="java.util.Date"/>
-</field>
-<field position="19" name="examination4_name" type="InputText" id="1623189440">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;name (examination4)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="examination4/name"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="38" name="gds_value" type="InputTextFloat" id="2062775336">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;value (gds)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="gds/value"/>
-<property name="fieldClass" value="java.lang.Float"/>
-</field>
-<field position="77" name="plan2_description" type="InputText" id="498409868">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;description (plan2)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="plan2/description"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="63" name="patient_assignements" type="MultipleSubform" id="174156458">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;assignements (patient)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="patient/assignements"/>
-<property name="fieldClass" value="java.util.List"/>
 </field>
 <field position="8" name="examination1_result" type="InputText" id="1977341391">
 <property name="fieldRequired" value="false"/>
@@ -332,61 +76,13 @@
 <property name="outputBinding" value="examination1/result"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="28" name="examination7_name" type="InputText" id="1008432430">
+<field position="9" name="examination10_date" type="InputDate" id="1494249030">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;name (examination7)quot;"/>
+<property name="label" value="quot;enquot;,quot;date (examination10)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value=""/>
-<property name="outputBinding" value="examination7/name"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="36" name="gds_date" type="InputDate" id="1095017523">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;date (gds)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="gds/date"/>
+<property name="outputBinding" value="examination10/date"/>
 <property name="fieldClass" value="java.util.Date"/>
-</field>
-<field position="47" name="iadl3_value" type="InputTextFloat" id="1477739511">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;value (iadl3)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="iadl3/value"/>
-<property name="fieldClass" value="java.lang.Float"/>
-</field>
-<field position="84" name="treatment1_date" type="InputDate" id="575228111">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;date (treatment1)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="treatment1/date"/>
-<property name="fieldClass" value="java.util.Date"/>
-</field>
-<field position="73" name="patient_vitalSigns" type="MultipleSubform" id="1656490647">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;vitalSigns (patient)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="patient/vitalSigns"/>
-<property name="fieldClass" value="java.util.List"/>
-</field>
-<field position="15" name="examination3_date" type="InputDate" id="183407284">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;date (examination3)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="examination3/date"/>
-<property name="fieldClass" value="java.util.Date"/>
-</field>
-<field position="14" name="examination2_result" type="InputText" id="677709070">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;result (examination2)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="examination2/result"/>
-<property name="fieldClass" value="java.lang.String"/>
 </field>
 <field position="10" name="examination10_name" type="InputText" id="1571462422">
 <property name="fieldRequired" value="false"/>
@@ -396,172 +92,44 @@
 <property name="outputBinding" value="examination10/name"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="33" name="examination9_date" type="InputDate" id="1219808312">
+<field position="11" name="examination10_result" type="InputText" id="218227326">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;date (examination9)quot;"/>
+<property name="label" value="quot;enquot;,quot;result (examination10)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value=""/>
-<property name="outputBinding" value="examination9/date"/>
-<property name="fieldClass" value="java.util.Date"/>
-</field>
-<field position="78" name="symptom1_date" type="InputDate" id="1315883539">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;date (symptom1)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="symptom1/date"/>
-<property name="fieldClass" value="java.util.Date"/>
-</field>
-<field position="34" name="examination9_name" type="InputText" id="1534684214">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;name (examination9)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="examination9/name"/>
+<property name="outputBinding" value="examination10/result"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="55" name="mmse3_name" type="InputText" id="308601826">
+<field position="12" name="examination2_date" type="InputDate" id="22462212">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;name (mmse3)quot;"/>
+<property name="label" value="quot;enquot;,quot;date (examination2)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value=""/>
-<property name="outputBinding" value="mmse3/name"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="50" name="mmse1_value" type="InputTextFloat" id="907977896">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;value (mmse1)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="mmse1/value"/>
-<property name="fieldClass" value="java.lang.Float"/>
-</field>
-<field position="2" name="diagnosis2_date" type="InputDate" id="1503060374">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;date (diagnosis2)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="diagnosis2/date"/>
+<property name="outputBinding" value="examination2/date"/>
 <property name="fieldClass" value="java.util.Date"/>
 </field>
-<field position="21" name="examination5_date" type="InputDate" id="711634813">
+<field position="13" name="examination2_name" type="InputText" id="2052806548">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;date (examination5)quot;"/>
+<property name="label" value="quot;enquot;,quot;name (examination2)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value=""/>
-<property name="outputBinding" value="examination5/date"/>
-<property name="fieldClass" value="java.util.Date"/>
-</field>
-<field position="75" name="plan1_description" type="InputText" id="401012917">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;description (plan1)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="plan1/description"/>
+<property name="outputBinding" value="examination2/name"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="45" name="iadl3_date" type="InputDate" id="665680362">
+<field position="14" name="examination2_result" type="InputText" id="677709070">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;date (iadl3)quot;"/>
+<property name="label" value="quot;enquot;,quot;result (examination2)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value=""/>
-<property name="outputBinding" value="iadl3/date"/>
-<property name="fieldClass" value="java.util.Date"/>
-</field>
-<field position="86" name="treatment2_date" type="InputDate" id="336122646">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;date (treatment2)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="treatment2/date"/>
-<property name="fieldClass" value="java.util.Date"/>
-</field>
-<field position="24" name="examination6_date" type="InputDate" id="779044954">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;date (examination6)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="examination6/date"/>
-<property name="fieldClass" value="java.util.Date"/>
-</field>
-<field position="60" name="npi_date" type="InputDate" id="334983401">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;date (npi)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="npi/date"/>
-<property name="fieldClass" value="java.util.Date"/>
-</field>
-<field position="81" name="symptom2_description" type="InputText" id="842935762">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;description (symptom2)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="symptom2/description"/>
+<property name="outputBinding" value="examination2/result"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="70" name="patient_neuropsychologicalParameters" type="MultipleSubform" id="1524257903">
+<field position="15" name="examination3_date" type="InputDate" id="183407284">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;neuropsychologicalParameters (patient)quot;"/>
+<property name="label" value="quot;enquot;,quot;date (examination3)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value=""/>
-<property name="outputBinding" value="patient/neuropsychologicalParameters"/>
-<property name="fieldClass" value="java.util.List"/>
-</field>
-<field position="42" name="iadl2_date" type="InputDate" id="1298375734">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;date (iadl2)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="iadl2/date"/>
-<property name="fieldClass" value="java.util.Date"/>
-</field>
-<field position="87" name="treatment2_name" type="InputText" id="1648470882">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;name (treatment2)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="treatment2/name"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="31" name="examination8_name" type="InputText" id="1085599425">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;name (examination8)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="examination8/name"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="23" name="examination5_result" type="InputText" id="1976522646">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;result (examination5)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="examination5/result"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="5" name="diagnosis3_value" type="InputText" id="1989883800">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;value (diagnosis3)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="diagnosis3/value"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="53" name="mmse2_value" type="InputTextFloat" id="635622951">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;value (mmse2)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="mmse2/value"/>
-<property name="fieldClass" value="java.lang.Float"/>
-</field>
-<field position="82" name="symptom3_date" type="InputDate" id="1067437434">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;date (symptom3)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="symptom3/date"/>
+<property name="outputBinding" value="examination3/date"/>
 <property name="fieldClass" value="java.util.Date"/>
 </field>
 <field position="16" name="examination3_name" type="InputText" id="1369490067">
@@ -572,29 +140,69 @@
 <property name="outputBinding" value="examination3/name"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="27" name="examination7_date" type="InputDate" id="1015077647">
+<field position="17" name="examination3_result" type="InputText" id="1089978159">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;date (examination7)quot;"/>
+<property name="label" value="quot;enquot;,quot;result (examination3)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value=""/>
-<property name="outputBinding" value="examination7/date"/>
-<property name="fieldClass" value="java.util.Date"/>
-</field>
-<field position="68" name="patient_lastName" type="InputText" id="1335431726">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;lastName (patient)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="patient/lastName"/>
+<property name="outputBinding" value="examination3/result"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="64" name="patient_assistancePlans" type="MultipleSubform" id="287414062">
+<field position="18" name="examination4_date" type="InputDate" id="951138220">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;assistancePlans (patient)quot;"/>
+<property name="label" value="quot;enquot;,quot;date (examination4)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value=""/>
-<property name="outputBinding" value="patient/assistancePlans"/>
-<property name="fieldClass" value="java.util.List"/>
+<property name="outputBinding" value="examination4/date"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="19" name="examination4_name" type="InputText" id="1623189440">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;name (examination4)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="examination4/name"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="20" name="examination4_result" type="InputText" id="1516505528">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;result (examination4)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="examination4/result"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="21" name="examination5_date" type="InputDate" id="711634813">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;date (examination5)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="examination5/date"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="22" name="examination5_name" type="InputText" id="368349524">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;name (examination5)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="examination5/name"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="23" name="examination5_result" type="InputText" id="1976522646">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;result (examination5)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="examination5/result"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="24" name="examination6_date" type="InputDate" id="779044954">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;date (examination6)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="examination6/date"/>
+<property name="fieldClass" value="java.util.Date"/>
 </field>
 <field position="25" name="examination6_name" type="InputText" id="198160499">
 <property name="fieldRequired" value="false"/>
@@ -604,20 +212,268 @@
 <property name="outputBinding" value="examination6/name"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="65" name="patient_birthDate" type="InputDate" id="832451641">
+<field position="26" name="examination6_result" type="InputText" id="28972301">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;birthDate (patient)quot;"/>
+<property name="label" value="quot;enquot;,quot;result (examination6)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value=""/>
-<property name="outputBinding" value="patient/birthDate"/>
+<property name="outputBinding" value="examination6/result"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="27" name="examination7_date" type="InputDate" id="1015077647">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;date (examination7)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="examination7/date"/>
 <property name="fieldClass" value="java.util.Date"/>
 </field>
-<field position="83" name="symptom3_description" type="InputText" id="596830939">
+<field position="28" name="examination7_name" type="InputText" id="1008432430">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;description (symptom3)quot;"/>
+<property name="label" value="quot;enquot;,quot;name (examination7)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value=""/>
-<property name="outputBinding" value="symptom3/description"/>
+<property name="outputBinding" value="examination7/name"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="29" name="examination7_result" type="InputText" id="1998242145">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;result (examination7)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="examination7/result"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="30" name="examination8_date" type="InputDate" id="810904812">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;date (examination8)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="examination8/date"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="31" name="examination8_name" type="InputText" id="1085599425">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;name (examination8)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="examination8/name"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="32" name="examination8_result" type="InputText" id="1957626186">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;result (examination8)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="examination8/result"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="33" name="examination9_date" type="InputDate" id="1219808312">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;date (examination9)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="examination9/date"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="34" name="examination9_name" type="InputText" id="1534684214">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;name (examination9)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="examination9/name"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="35" name="examination9_result" type="InputText" id="1493414922">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;result (examination9)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="examination9/result"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="36" name="gds_date" type="InputDate" id="1095017523">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;date (gds)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="gds/date"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="37" name="gds_name" type="InputText" id="1403747129">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;name (gds)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="gds/name"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="38" name="gds_value" type="InputTextFloat" id="2062775336">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;value (gds)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="gds/value"/>
+<property name="fieldClass" value="java.lang.Float"/>
+</field>
+<field position="39" name="iadl1_date" type="InputDate" id="971156536">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;date (iadl1)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="iadl1/date"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="40" name="iadl1_name" type="InputText" id="1886304413">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;name (iadl1)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="iadl1/name"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="41" name="iadl1_value" type="InputTextFloat" id="1800951689">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;value (iadl1)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="iadl1/value"/>
+<property name="fieldClass" value="java.lang.Float"/>
+</field>
+<field position="42" name="iadl2_date" type="InputDate" id="1298375734">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;date (iadl2)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="iadl2/date"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="43" name="iadl2_name" type="InputText" id="1308212297">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;name (iadl2)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="iadl2/name"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="44" name="iadl2_value" type="InputTextFloat" id="1690975710">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;value (iadl2)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="iadl2/value"/>
+<property name="fieldClass" value="java.lang.Float"/>
+</field>
+<field position="45" name="iadl3_date" type="InputDate" id="665680362">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;date (iadl3)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="iadl3/date"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="46" name="iadl3_name" type="InputText" id="1950277030">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;name (iadl3)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="iadl3/name"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="47" name="iadl3_value" type="InputTextFloat" id="1477739511">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;value (iadl3)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="iadl3/value"/>
+<property name="fieldClass" value="java.lang.Float"/>
+</field>
+<field position="48" name="mmse1_date" type="InputDate" id="1040739576">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;date (mmse1)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="mmse1/date"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="49" name="mmse1_name" type="InputText" id="775262786">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;name (mmse1)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="mmse1/name"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="50" name="mmse1_value" type="InputTextFloat" id="907977896">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;value (mmse1)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="mmse1/value"/>
+<property name="fieldClass" value="java.lang.Float"/>
+</field>
+<field position="51" name="mmse2_date" type="InputDate" id="1469187380">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;date (mmse2)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="mmse2/date"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="52" name="mmse2_name" type="InputText" id="1830624763">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;name (mmse2)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="mmse2/name"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="53" name="mmse2_value" type="InputTextFloat" id="635622951">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;value (mmse2)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="mmse2/value"/>
+<property name="fieldClass" value="java.lang.Float"/>
+</field>
+<field position="54" name="mmse3_date" type="InputDate" id="310400273">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;date (mmse3)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="mmse3/date"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="55" name="mmse3_name" type="InputText" id="308601826">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;name (mmse3)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="mmse3/name"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="56" name="mmse3_value" type="InputTextFloat" id="1053138629">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;value (mmse3)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="mmse3/value"/>
+<property name="fieldClass" value="java.lang.Float"/>
+</field>
+<field position="57" name="mmse4_date" type="InputDate" id="1333677207">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;date (mmse4)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="mmse4/date"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="58" name="mmse4_name" type="InputText" id="1218686434">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;name (mmse4)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="mmse4/name"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
 <field position="59" name="mmse4_value" type="InputTextFloat" id="448340934">
@@ -628,60 +484,264 @@
 <property name="outputBinding" value="mmse4/value"/>
 <property name="fieldClass" value="java.lang.Float"/>
 </field>
-<field position="17" name="examination3_result" type="InputText" id="1089978159">
+<field position="60" name="npi_date" type="InputDate" id="334983401">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;result (examination3)quot;"/>
+<property name="label" value="quot;enquot;,quot;date (npi)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value=""/>
-<property name="outputBinding" value="examination3/result"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="37" name="gds_name" type="InputText" id="1403747129">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;name (gds)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="gds/name"/>
-<property name="fieldClass" value="java.lang.String"/>
-</field>
-<field position="39" name="iadl1_date" type="InputDate" id="971156536">
-<property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;date (iadl1)quot;"/>
-<property name="readonly" value="false"/>
-<property name="inputBinding" value=""/>
-<property name="outputBinding" value="iadl1/date"/>
+<property name="outputBinding" value="npi/date"/>
 <property name="fieldClass" value="java.util.Date"/>
 </field>
-<field position="48" name="mmse1_date" type="InputDate" id="1040739576">
+<field position="61" name="npi_name" type="InputText" id="697224639">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;date (mmse1)quot;"/>
+<property name="label" value="quot;enquot;,quot;name (npi)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value=""/>
-<property name="outputBinding" value="mmse1/date"/>
+<property name="outputBinding" value="npi/name"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="62" name="npi_value" type="InputTextFloat" id="835587799">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;value (npi)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="npi/value"/>
+<property name="fieldClass" value="java.lang.Float"/>
+</field>
+<field position="63" name="patient_assignements" type="MultipleSubform" id="174156458">
+<property name="fieldRequired" value="false"/>
+<property name="labelCSSClass" value=""/>
+<property name="labelCSSStyle" value=""/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;assignements (patient)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="styleclass" value=""/>
+<property name="cssStyle" value=""/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="patient/assignements"/>
+<property name="defaultSubform" value="Assignement.form"/>
+<property name="previewSubform" value="Assignement.form"/>
+<property name="tableSubform" value="Assignement.form"/>
+<property name="newItemText" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="addItemText" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="cancelItemText" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="deleteItems" value="false"/>
+<property name="updateItems" value="false"/>
+<property name="visualizeItems" value="false"/>
+<property name="hideCreateItem" value="false"/>
+<property name="expanded" value="false"/>
+<property name="enableTableEnterData" value="false"/>
+<property name="fieldClass" value="java.util.List"/>
+</field>
+<field position="64" name="patient_assistancePlans" type="MultipleSubform" id="287414062">
+<property name="fieldRequired" value="false"/>
+<property name="labelCSSClass" value=""/>
+<property name="labelCSSStyle" value=""/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;assistancePlans (patient)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="styleclass" value=""/>
+<property name="cssStyle" value=""/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="patient/assistancePlans"/>
+<property name="defaultSubform" value="AssistancePlan.form"/>
+<property name="previewSubform" value="AssistancePlan.form"/>
+<property name="tableSubform" value="AssistancePlan.form"/>
+<property name="newItemText" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="addItemText" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="cancelItemText" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="deleteItems" value="false"/>
+<property name="updateItems" value="false"/>
+<property name="visualizeItems" value="false"/>
+<property name="hideCreateItem" value="false"/>
+<property name="expanded" value="false"/>
+<property name="enableTableEnterData" value="false"/>
+<property name="fieldClass" value="java.util.List"/>
+</field>
+<field position="65" name="patient_birthDate" type="InputDate" id="832451641">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;birthDate (patient)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="patient/birthDate"/>
 <property name="fieldClass" value="java.util.Date"/>
 </field>
-<field position="35" name="examination9_result" type="InputText" id="1493414922">
+<field position="66" name="patient_diagnoses" type="MultipleSubform" id="1363309737">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;result (examination9)quot;"/>
+<property name="labelCSSClass" value=""/>
+<property name="labelCSSStyle" value=""/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;diagnoses (patient)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="styleclass" value=""/>
+<property name="cssStyle" value=""/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="patient/diagnoses"/>
+<property name="defaultSubform" value="Diagnosis.form"/>
+<property name="previewSubform" value="Diagnosis.form"/>
+<property name="tableSubform" value="Diagnosis.form"/>
+<property name="newItemText" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="addItemText" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="cancelItemText" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="deleteItems" value="false"/>
+<property name="updateItems" value="false"/>
+<property name="visualizeItems" value="false"/>
+<property name="hideCreateItem" value="false"/>
+<property name="expanded" value="false"/>
+<property name="enableTableEnterData" value="false"/>
+<property name="fieldClass" value="java.util.List"/>
+</field>
+<field position="67" name="patient_firstName" type="InputText" id="1901881077">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;firstName (patient)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value=""/>
-<property name="outputBinding" value="examination9/result"/>
+<property name="outputBinding" value="patient/firstName"/>
 <property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="68" name="patient_lastName" type="InputText" id="1335431726">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;lastName (patient)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="patient/lastName"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="69" name="patient_medicalExaminations" type="MultipleSubform" id="260141189">
+<property name="fieldRequired" value="false"/>
+<property name="labelCSSClass" value=""/>
+<property name="labelCSSStyle" value=""/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;medicalExaminations (patient)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="styleclass" value=""/>
+<property name="cssStyle" value=""/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="patient/medicalExaminations"/>
+<property name="defaultSubform" value="MedicalExamination.form"/>
+<property name="previewSubform" value="MedicalExamination.form"/>
+<property name="tableSubform" value="MedicalExamination.form"/>
+<property name="newItemText" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="addItemText" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="cancelItemText" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="deleteItems" value="false"/>
+<property name="updateItems" value="false"/>
+<property name="visualizeItems" value="false"/>
+<property name="hideCreateItem" value="false"/>
+<property name="expanded" value="false"/>
+<property name="enableTableEnterData" value="false"/>
+<property name="fieldClass" value="java.util.List"/>
+</field>
+<field position="70" name="patient_neuropsychologicalParameters" type="MultipleSubform" id="1524257903">
+<property name="fieldRequired" value="false"/>
+<property name="labelCSSClass" value=""/>
+<property name="labelCSSStyle" value=""/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;neuropsychologicalParameters (patient)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="readonly" value="false"/>
+<property name="styleclass" value=""/>
+<property name="cssStyle" value=""/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="patient/neuropsychologicalParameters"/>
+<property name="defaultSubform" value="NeuropsychologicalParameter.form"/>
+<property name="previewSubform" value="NeuropsychologicalParameter.form"/>
+<property name="tableSubform" value="NeuropsychologicalParameter.form"/>
+<property name="newItemText" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="addItemText" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="cancelItemText" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="deleteItems" value="false"/>
+<property name="updateItems" value="false"/>
+<property name="visualizeItems" value="false"/>
+<property name="hideCreateItem" value="false"/>
+<property name="expanded" value="false"/>
+<property name="enableTableEnterData" value="false"/>
+<property name="fieldClass" value="java.util.List"/>
 </field>
 <field position="71" name="patient_symptoms" type="MultipleSubform" id="652892182">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;symptoms (patient)quot;"/>
+<property name="labelCSSClass" value=""/>
+<property name="labelCSSStyle" value=""/>
+<property name="label" value="quot;SSClassquot;,quot;quot;quot;SSStylequot;,quot;quot;quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;symptoms (patient)quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="errorMessage" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="title" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
 <property name="readonly" value="false"/>
+<property name="styleclass" value=""/>
+<property name="cssStyle" value=""/>
 <property name="inputBinding" value=""/>
 <property name="outputBinding" value="patient/symptoms"/>
+<property name="defaultSubform" value="Symptom.form"/>
+<property name="previewSubform" value="Symptom.form"/>
+<property name="tableSubform" value="Symptom.form"/>
+<property name="newItemText" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="addItemText" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="cancelItemText" value="quot;caquot;,quot;quot;quot;dequot;,quot;quot;quot;enquot;,quot;quot;quot;esquot;,quot;quot;quot;frquot;,quot;quot;quot;jaquot;,quot;quot;quot;ptquot;,quot;quot;quot;zhquot;,quot;quot;"/>
+<property name="deleteItems" value="false"/>
+<property name="updateItems" value="false"/>
+<property name="visualizeItems" value="false"/>
+<property name="hideCreateItem" value="false"/>
+<property name="expanded" value="false"/>
+<property name="enableTableEnterData" value="false"/>
 <property name="fieldClass" value="java.util.List"/>
 </field>
-<field position="88" name="treatment3_date" type="InputDate" id="2000903017">
+<field position="72" name="patient_treatments" type="MultipleSubform" id="2113138950">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;date (treatment3)quot;"/>
+<property name="label" value="quot;enquot;,quot;treatments (patient)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value=""/>
-<property name="outputBinding" value="treatment3/date"/>
+<property name="outputBinding" value="patient/treatments"/>
+<property name="fieldClass" value="java.util.List"/>
+</field>
+<field position="73" name="patient_vitalSigns" type="MultipleSubform" id="1656490647">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;vitalSigns (patient)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="patient/vitalSigns"/>
+<property name="fieldClass" value="java.util.List"/>
+</field>
+<field position="74" name="plan1_date" type="InputDate" id="1987148980">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;date (plan1)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="plan1/date"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="75" name="plan1_description" type="InputText" id="401012917">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;description (plan1)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="plan1/description"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="76" name="plan2_date" type="InputDate" id="1588990493">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;date (plan2)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="plan2/date"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="77" name="plan2_description" type="InputText" id="498409868">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;description (plan2)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="plan2/description"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="78" name="symptom1_date" type="InputDate" id="1315883539">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;date (symptom1)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="symptom1/date"/>
 <property name="fieldClass" value="java.util.Date"/>
 </field>
 <field position="79" name="symptom1_description" type="InputText" id="2009358156">
@@ -692,36 +752,84 @@
 <property name="outputBinding" value="symptom1/description"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="1" name="diagnosis1_value" type="InputText" id="1477758386">
+<field position="80" name="symptom2_date" type="InputDate" id="1845954246">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;value (diagnosis1)quot;"/>
+<property name="label" value="quot;enquot;,quot;date (symptom2)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value=""/>
-<property name="outputBinding" value="diagnosis1/value"/>
+<property name="outputBinding" value="symptom2/date"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="81" name="symptom2_description" type="InputText" id="842935762">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;description (symptom2)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="symptom2/description"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="69" name="patient_medicalExaminations" type="MultipleSubform" id="260141189">
+<field position="82" name="symptom3_date" type="InputDate" id="1067437434">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;medicalExaminations (patient)quot;"/>
+<property name="label" value="quot;enquot;,quot;date (symptom3)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value=""/>
-<property name="outputBinding" value="patient/medicalExaminations"/>
-<property name="fieldClass" value="java.util.List"/>
+<property name="outputBinding" value="symptom3/date"/>
+<property name="fieldClass" value="java.util.Date"/>
 </field>
-<field position="11" name="examination10_result" type="InputText" id="218227326">
+<field position="83" name="symptom3_description" type="InputText" id="596830939">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;result (examination10)quot;"/>
+<property name="label" value="quot;enquot;,quot;description (symptom3)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value=""/>
-<property name="outputBinding" value="examination10/result"/>
+<property name="outputBinding" value="symptom3/description"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
-<field position="3" name="diagnosis2_value" type="InputText" id="1342673968">
+<field position="84" name="treatment1_date" type="InputDate" id="575228111">
 <property name="fieldRequired" value="false"/>
-<property name="label" value="quot;enquot;,quot;value (diagnosis2)quot;"/>
+<property name="label" value="quot;enquot;,quot;date (treatment1)quot;"/>
 <property name="readonly" value="false"/>
 <property name="inputBinding" value=""/>
-<property name="outputBinding" value="diagnosis2/value"/>
+<property name="outputBinding" value="treatment1/date"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="85" name="treatment1_name" type="InputText" id="170608529">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;name (treatment1)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="treatment1/name"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="86" name="treatment2_date" type="InputDate" id="336122646">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;date (treatment2)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="treatment2/date"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="87" name="treatment2_name" type="InputText" id="1648470882">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;name (treatment2)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="treatment2/name"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="88" name="treatment3_date" type="InputDate" id="2000903017">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;date (treatment3)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="treatment3/date"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="89" name="treatment3_name" type="InputText" id="2107239472">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;name (treatment3)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="treatment3/name"/>
 <property name="fieldClass" value="java.lang.String"/>
 </field>
 <dataHolder inputId="" name="#FBB767" type="dataModelerEntry" outId="diagnosis1" value="upec.Diagnosis" id="diagnosis1"/>
