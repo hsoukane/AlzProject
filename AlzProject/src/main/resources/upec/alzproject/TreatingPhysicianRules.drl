@@ -1,6 +1,7 @@
 package upec.alzproject;
 import upec.PatientRecord;
 import upec.Symptom;
+import upec.MedicalExamination;
 
 rule"inserting patient symptoms into the wm"
 ruleflow-group"TreatingPhysicianRules1"
@@ -20,7 +21,7 @@ salience 4
 no-loop true
 when
 (sym1:upec.Symptom( description=="Cognitive impairment") or sym2:upec.Symptom(description=="Psychomental change"))
-examination1:upec.MedicalExamination(this!=null)
+examination1: upec.MedicalExamination(this!=null)
 examination2:upec.MedicalExamination(this!=null)
 then
 examination1.setName("MMSE evaluation");
