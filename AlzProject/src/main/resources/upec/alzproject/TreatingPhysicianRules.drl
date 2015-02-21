@@ -14,7 +14,7 @@ insertLogical(sy);
 System.out.println("insert fact:"+ sy.getDescription());
 end
 
-rule"Suggested tests for the teating physician"
+rule"Suggested tests for the treating physician"
 ruleflow-group"TreatingPhysicianRules1"
 salience 4
 no-loop true
