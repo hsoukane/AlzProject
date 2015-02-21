@@ -1,2 +1,30 @@
 package upec.alzproject;
+import upec.PatientRecord;
+import upec.Symptom;
+
+rule"inserting patient symptoms into the wm"
+ruleflow-group"TeatingPhysicianRules1"
+salience 4
+no-loop true
+when
+patient:upec.PatientRecord( syl:symptoms)
+sy:upec.Symptom( )from syl
+then
+insertLogical(sy);
+System.out.println("insert fact:"+ sy.getDescription());
+end
+
+rule"Suggested test for the teating physician"
+ruleflow-group"TeatingPhysicianRules1"
+salience 4
+no-loop true
+when
+(sym1:upec.Symptom( description=="Cognitive impairment") or sym1:upec.Symptom(description=="Psychomental change"))
+SuggestedTest1: upec.MedicalExamination(this!=null)
+SuggestedTest2:upec.MedicalExamination(this!=null)
+then
+SuggestedTest1.setName("MMSE evaluation");
+SuggestedTest1.setName("IADL evaluation");
+end
+
 
