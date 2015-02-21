@@ -21,7 +21,7 @@
 <property name="cssStyle" value=""/>
 <property name="isHTML" value="false"/>
 <property name="hideContent" value="false"/>
-<property name="defaultValueFormula" value="examination1.getName()"/>
+<property name="defaultValueFormula" value="=examination1.getName()"/>
 <property name="inputBinding" value="_examination1/name"/>
 <property name="outputBinding" value="examination1_/name"/>
 <property name="fieldClass" value="java.lang.String"/>
@@ -61,7 +61,7 @@
 <property name="cssStyle" value=""/>
 <property name="isHTML" value="false"/>
 <property name="hideContent" value="false"/>
-<property name="defaultValueFormula" value="examination2.getName()"/>
+<property name="defaultValueFormula" value="=examination2.getName()"/>
 <property name="inputBinding" value="_examination2/name"/>
 <property name="outputBinding" value="examination2_/name"/>
 <property name="fieldClass" value="java.lang.String"/>
