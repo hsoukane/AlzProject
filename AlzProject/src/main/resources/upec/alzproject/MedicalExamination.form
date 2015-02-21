@@ -4,4 +4,29 @@
 <property name="name" value="MedicalExamination.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
+<field position="0" name="medicalExamination_date" type="InputDate" id="1397309711">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;date (medicalExamination)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_medicalExamination/date"/>
+<property name="outputBinding" value="medicalExamination_/date"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="1" name="medicalExamination_name" type="InputText" id="1425233150">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;name (medicalExamination)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_medicalExamination/name"/>
+<property name="outputBinding" value="medicalExamination_/name"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="2" name="medicalExamination_result" type="InputText" id="2079984034">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;result (medicalExamination)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_medicalExamination/result"/>
+<property name="outputBinding" value="medicalExamination_/result"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="_medicalExamination" name="#0000A0" type="dataModelerEntry" outId="medicalExamination_" value="upec.MedicalExamination" id="medicalExamination"/>
 </form>
