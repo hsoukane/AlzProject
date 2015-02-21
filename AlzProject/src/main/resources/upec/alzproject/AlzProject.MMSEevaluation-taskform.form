@@ -1,0 +1,32 @@
+
+<form id="867701040">
+<property name="subject" value=""/>
+<property name="name" value="AlzProject.MMSEevaluation-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="2" name="mmse_value" type="InputTextFloat" id="2004539655">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;value (mmse)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="mmse/value"/>
+<property name="fieldClass" value="java.lang.Float"/>
+</field>
+<field position="0" name="mmse_date" type="InputDate" id="570437123">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;date (mmse)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="mmse/date"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="1" name="mmse_name" type="InputText" id="803026137">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;name (mmse)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="mmse/name"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="" name="#0000A0" type="dataModelerEntry" outId="mmse" value="upec.NeuropsychologicalParameter" id="mmse"/>
+</form>
