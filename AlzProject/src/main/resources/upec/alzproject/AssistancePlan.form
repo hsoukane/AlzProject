@@ -4,4 +4,21 @@
 <property name="name" value="AssistancePlan.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
+<field position="0" name="assistancePlan_date" type="InputDate" id="1917846800">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;date (assistancePlan)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_assistancePlan/date"/>
+<property name="outputBinding" value="assistancePlan_/date"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="1" name="assistancePlan_description" type="InputText" id="252168548">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;description (assistancePlan)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_assistancePlan/description"/>
+<property name="outputBinding" value="assistancePlan_/description"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="_assistancePlan" name="#0000A0" type="dataModelerEntry" outId="assistancePlan_" value="upec.AssistancePlan" id="assistancePlan"/>
 </form>
