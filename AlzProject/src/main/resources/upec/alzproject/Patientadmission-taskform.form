@@ -1,0 +1,147 @@
+
+<form id="1829944687">
+<property name="subject" value=""/>
+<property name="name" value="Patientadmission-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="16" name="symptom3_description" type="InputText" id="1675999109">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;description (symptom3)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_symptom3/description"/>
+<property name="outputBinding" value="symptom3_/description"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="2" name="patient_birthDate" type="InputDate" id="408137075">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;birthDate (patient)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_patient/birthDate"/>
+<property name="outputBinding" value="patient_/birthDate"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="3" name="patient_diagnoses" type="MultipleSubform" id="435904167">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;diagnoses (patient)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_patient/diagnoses"/>
+<property name="outputBinding" value="patient_/diagnoses"/>
+<property name="fieldClass" value="java.util.List"/>
+</field>
+<field position="0" name="patient_assignements" type="MultipleSubform" id="238509514">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;assignements (patient)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_patient/assignements"/>
+<property name="outputBinding" value="patient_/assignements"/>
+<property name="fieldClass" value="java.util.List"/>
+</field>
+<field position="12" name="symptom1_description" type="InputText" id="245277391">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;description (symptom1)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_symptom1/description"/>
+<property name="outputBinding" value="symptom1_/description"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="patient_assistancePlans" type="MultipleSubform" id="228936417">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;assistancePlans (patient)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_patient/assistancePlans"/>
+<property name="outputBinding" value="patient_/assistancePlans"/>
+<property name="fieldClass" value="java.util.List"/>
+</field>
+<field position="15" name="symptom3_date" type="InputDate" id="1307171196">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;date (symptom3)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_symptom3/date"/>
+<property name="outputBinding" value="symptom3_/date"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="6" name="patient_medicalExaminations" type="MultipleSubform" id="281745958">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;medicalExaminations (patient)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_patient/medicalExaminations"/>
+<property name="outputBinding" value="patient_/medicalExaminations"/>
+<property name="fieldClass" value="java.util.List"/>
+</field>
+<field position="7" name="patient_neuropsychologicalParameters" type="MultipleSubform" id="1619569803">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;neuropsychologicalParameters (patient)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_patient/neuropsychologicalParameters"/>
+<property name="outputBinding" value="patient_/neuropsychologicalParameters"/>
+<property name="fieldClass" value="java.util.List"/>
+</field>
+<field position="4" name="patient_firstName" type="InputText" id="1656602866">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;firstName (patient)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_patient/firstName"/>
+<property name="outputBinding" value="patient_/firstName"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="14" name="symptom2_description" type="InputText" id="496415561">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;description (symptom2)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_symptom2/description"/>
+<property name="outputBinding" value="symptom2_/description"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="13" name="symptom2_date" type="InputDate" id="128662305">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;date (symptom2)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_symptom2/date"/>
+<property name="outputBinding" value="symptom2_/date"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="11" name="symptom1_date" type="InputDate" id="1413156840">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;date (symptom1)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_symptom1/date"/>
+<property name="outputBinding" value="symptom1_/date"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="8" name="patient_symptoms" type="MultipleSubform" id="1324734266">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;symptoms (patient)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_patient/symptoms"/>
+<property name="outputBinding" value="patient_/symptoms"/>
+<property name="fieldClass" value="java.util.List"/>
+</field>
+<field position="9" name="patient_treatments" type="MultipleSubform" id="1383800866">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;treatments (patient)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_patient/treatments"/>
+<property name="outputBinding" value="patient_/treatments"/>
+<property name="fieldClass" value="java.util.List"/>
+</field>
+<field position="10" name="patient_vitalSigns" type="MultipleSubform" id="1085836003">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;vitalSigns (patient)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_patient/vitalSigns"/>
+<property name="outputBinding" value="patient_/vitalSigns"/>
+<property name="fieldClass" value="java.util.List"/>
+</field>
+<field position="5" name="patient_lastName" type="InputText" id="427239620">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;lastName (patient)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_patient/lastName"/>
+<property name="outputBinding" value="patient_/lastName"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="_patient" name="#0000A0" type="dataModelerEntry" outId="patient_" value="upec.PatientRecord" id="patient"/>
+<dataHolder inputId="_symptom1" name="#FF54A7" type="dataModelerEntry" outId="symptom1_" value="upec.Symptom" id="symptom1"/>
+<dataHolder inputId="_symptom2" name="#A7E690" type="dataModelerEntry" outId="symptom2_" value="upec.Symptom" id="symptom2"/>
+<dataHolder inputId="_symptom3" name="#B29FE4" type="dataModelerEntry" outId="symptom3_" value="upec.Symptom" id="symptom3"/>
+</form>
