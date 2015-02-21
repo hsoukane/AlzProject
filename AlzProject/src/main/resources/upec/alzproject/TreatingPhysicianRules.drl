@@ -24,6 +24,7 @@ examination1:upec.MedicalExamination(this!=null)
 examination2:upec.MedicalExamination(this!=null)
 then
 examination1.setName("MMSE evaluation");
+System.out.println("hehe!!!!");
 examination2.setName("IADL evaluation");
 end
 
