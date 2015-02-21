@@ -1,14 +1,81 @@
-<?xml version="1.0" encoding="UTF-8"?> 
-<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:drools="http://www.jboss.org/drools" 
-id="Definition" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd" expressionLanguage="http://www.mvel.org/2.0" targetNamespace="http://www.omg.org/bpmn20" typeLanguage="http://www.java.com/javaTypes"> 
-   <bpmn2:process id="AlzProject.AlzheimerManagement" drools:packageName="org.jbpm" drools:version="1.0" name="" isExecutable="true"> 
-      <bpmn2:startEvent id="processStartEvent" drools:bgcolor="#9acd32" drools:selectable="true" name=""/> 
-   </bpmn2:process> 
-   <bpmndi:BPMNDiagram> 
-      <bpmndi:BPMNPlane bpmnElement="AlzProject.AlzheimerManagement"> 
-         <bpmndi:BPMNShape bpmnElement="processStartEvent"> 
-            <dc:Bounds height="30.0" width="30.0" x="120.0" y="165.0"/> 
-         </bpmndi:BPMNShape> 
-      </bpmndi:BPMNPlane> 
-   </bpmndi:BPMNDiagram> 
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn2:definitions xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.omg.org/bpmn20" xmlns:bpmn2="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:bpsim="http://www.bpsim.org/schemas/1.0" xmlns:drools="http://www.jboss.org/drools" id="_5XZfobnvEeSYK-lB7kEM6A" xsi:schemaLocation="http://www.omg.org/spec/BPMN/20100524/MODEL BPMN20.xsd http://www.jboss.org/drools drools.xsd http://www.bpsim.org/schemas/1.0 bpsim.xsd" expressionLanguage="http://www.mvel.org/2.0" targetNamespace="http://www.omg.org/bpmn20" typeLanguage="http://www.java.com/javaTypes">
+  <bpmn2:itemDefinition id="_patientItem" structureRef="upec.PatientRecord"/>
+  <bpmn2:itemDefinition id="_symptom1Item" structureRef="upec.Symptom"/>
+  <bpmn2:itemDefinition id="_symptom2Item" structureRef="upec.Symptom"/>
+  <bpmn2:itemDefinition id="_symptom3Item" structureRef="upec.Symptom"/>
+  <bpmn2:itemDefinition id="_mmse1Item" structureRef="upec.NeuropsychologicalParameter"/>
+  <bpmn2:itemDefinition id="_mmse2Item" structureRef="upec.NeuropsychologicalParameter"/>
+  <bpmn2:itemDefinition id="_mmse3Item" structureRef="upec.NeuropsychologicalParameter"/>
+  <bpmn2:itemDefinition id="_mmse4Item" structureRef="upec.NeuropsychologicalParameter"/>
+  <bpmn2:itemDefinition id="_iadl1Item" structureRef="upec.NeuropsychologicalParameter"/>
+  <bpmn2:itemDefinition id="_iadl2Item" structureRef="upec.NeuropsychologicalParameter"/>
+  <bpmn2:itemDefinition id="_iadl3Item" structureRef="upec.NeuropsychologicalParameter"/>
+  <bpmn2:itemDefinition id="_gdsItem" structureRef="upec.NeuropsychologicalParameter"/>
+  <bpmn2:itemDefinition id="_npiItem" structureRef="upec.NeuropsychologicalParameter"/>
+  <bpmn2:itemDefinition id="_examination1Item" structureRef="upec.MedicalExamination"/>
+  <bpmn2:itemDefinition id="_examination2Item" structureRef="upec.MedicalExamination"/>
+  <bpmn2:itemDefinition id="_examination3Item" structureRef="upec.MedicalExamination"/>
+  <bpmn2:itemDefinition id="_examination4Item" structureRef="upec.MedicalExamination"/>
+  <bpmn2:itemDefinition id="_examination5Item" structureRef="upec.MedicalExamination"/>
+  <bpmn2:itemDefinition id="_examination6Item" structureRef="upec.MedicalExamination"/>
+  <bpmn2:itemDefinition id="_examination7Item" structureRef="upec.MedicalExamination"/>
+  <bpmn2:itemDefinition id="_examination8Item" structureRef="upec.MedicalExamination"/>
+  <bpmn2:itemDefinition id="_examination9Item" structureRef="upec.MedicalExamination"/>
+  <bpmn2:itemDefinition id="_examination10Item" structureRef="upec.MedicalExamination"/>
+  <bpmn2:itemDefinition id="_treatment1Item" structureRef="upec.Treatment"/>
+  <bpmn2:itemDefinition id="_treatment2Item" structureRef="upec.Treatment"/>
+  <bpmn2:itemDefinition id="_treatment3Item" structureRef="upec.Treatment"/>
+  <bpmn2:itemDefinition id="_diagnosis1Item" structureRef="upec.Diagnosis"/>
+  <bpmn2:itemDefinition id="_plan1Item" structureRef="upec.AssistancePlan"/>
+  <bpmn2:itemDefinition id="_plan2Item" structureRef="upec.AssistancePlan"/>
+  <bpmn2:itemDefinition id="_diagnosis2Item" structureRef="upec.Diagnosis"/>
+  <bpmn2:itemDefinition id="_diagnosis3Item" structureRef="upec.Diagnosis"/>
+  <bpmn2:process id="AlzProject.AlzheimerManagement" drools:packageName="org.jbpm" drools:version="1.0" name="AlzheimerManagement" isExecutable="true">
+    <bpmn2:property id="patient" itemSubjectRef="_patientItem"/>
+    <bpmn2:property id="symptom1" itemSubjectRef="_symptom1Item"/>
+    <bpmn2:property id="symptom2" itemSubjectRef="_symptom2Item"/>
+    <bpmn2:property id="symptom3" itemSubjectRef="_symptom3Item"/>
+    <bpmn2:property id="mmse1" itemSubjectRef="_mmse1Item"/>
+    <bpmn2:property id="mmse2" itemSubjectRef="_mmse2Item"/>
+    <bpmn2:property id="mmse3" itemSubjectRef="_mmse3Item"/>
+    <bpmn2:property id="mmse4" itemSubjectRef="_mmse4Item"/>
+    <bpmn2:property id="iadl1" itemSubjectRef="_iadl1Item"/>
+    <bpmn2:property id="iadl2" itemSubjectRef="_iadl2Item"/>
+    <bpmn2:property id="iadl3" itemSubjectRef="_iadl3Item"/>
+    <bpmn2:property id="gds" itemSubjectRef="_gdsItem"/>
+    <bpmn2:property id="npi" itemSubjectRef="_npiItem"/>
+    <bpmn2:property id="examination1" itemSubjectRef="_examination1Item"/>
+    <bpmn2:property id="examination2" itemSubjectRef="_examination2Item"/>
+    <bpmn2:property id="examination3" itemSubjectRef="_examination3Item"/>
+    <bpmn2:property id="examination4" itemSubjectRef="_examination4Item"/>
+    <bpmn2:property id="examination5" itemSubjectRef="_examination5Item"/>
+    <bpmn2:property id="examination6" itemSubjectRef="_examination6Item"/>
+    <bpmn2:property id="examination7" itemSubjectRef="_examination7Item"/>
+    <bpmn2:property id="examination8" itemSubjectRef="_examination8Item"/>
+    <bpmn2:property id="examination9" itemSubjectRef="_examination9Item"/>
+    <bpmn2:property id="examination10" itemSubjectRef="_examination10Item"/>
+    <bpmn2:property id="treatment1" itemSubjectRef="_treatment1Item"/>
+    <bpmn2:property id="treatment2" itemSubjectRef="_treatment2Item"/>
+    <bpmn2:property id="treatment3" itemSubjectRef="_treatment3Item"/>
+    <bpmn2:property id="diagnosis1" itemSubjectRef="_diagnosis1Item"/>
+    <bpmn2:property id="plan1" itemSubjectRef="_plan1Item"/>
+    <bpmn2:property id="plan2" itemSubjectRef="_plan2Item"/>
+    <bpmn2:property id="diagnosis2" itemSubjectRef="_diagnosis2Item"/>
+    <bpmn2:property id="diagnosis3" itemSubjectRef="_diagnosis3Item"/>
+  </bpmn2:process>
+  <bpmndi:BPMNDiagram id="_5XipkLnvEeSYK-lB7kEM6A">
+    <bpmndi:BPMNPlane id="_5XipkbnvEeSYK-lB7kEM6A" bpmnElement="AlzProject.AlzheimerManagement"/>
+  </bpmndi:BPMNDiagram>
+  <bpmn2:relationship id="_5XjQoLnvEeSYK-lB7kEM6A" type="BPSimData">
+    <bpmn2:extensionElements>
+      <bpsim:BPSimData>
+        <bpsim:Scenario xsi:type="bpsim:Scenario" id="default" name="Simulationscenario">
+          <bpsim:ScenarioParameters xsi:type="bpsim:ScenarioParameters" baseTimeUnit="min"/>
+        </bpsim:Scenario>
+      </bpsim:BPSimData>
+    </bpmn2:extensionElements>
+    <bpmn2:source>_5XZfobnvEeSYK-lB7kEM6A</bpmn2:source>
+    <bpmn2:target>_5XZfobnvEeSYK-lB7kEM6A</bpmn2:target>
+  </bpmn2:relationship>
 </bpmn2:definitions>
