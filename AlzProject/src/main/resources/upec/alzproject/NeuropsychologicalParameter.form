@@ -4,4 +4,29 @@
 <property name="name" value="NeuropsychologicalParameter.form"/>
 <property name="displayMode" value="default"/>
 <property name="status" value="0"/>
+<field position="0" name="neuropsychologicalParameter_date" type="InputDate" id="421414605">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;date (neuropsychologicalParameter)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_neuropsychologicalParameter/date"/>
+<property name="outputBinding" value="neuropsychologicalParameter_/date"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="1" name="neuropsychologicalParameter_name" type="InputText" id="351806762">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;name (neuropsychologicalParameter)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_neuropsychologicalParameter/name"/>
+<property name="outputBinding" value="neuropsychologicalParameter_/name"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="2" name="neuropsychologicalParameter_value" type="InputTextFloat" id="918733640">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;value (neuropsychologicalParameter)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_neuropsychologicalParameter/value"/>
+<property name="outputBinding" value="neuropsychologicalParameter_/value"/>
+<property name="fieldClass" value="java.lang.Float"/>
+</field>
+<dataHolder inputId="_neuropsychologicalParameter" name="#0000A0" type="dataModelerEntry" outId="neuropsychologicalParameter_" value="upec.NeuropsychologicalParameter" id="neuropsychologicalParameter"/>
 </form>
