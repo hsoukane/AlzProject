@@ -3,7 +3,7 @@ import upec.PatientRecord;
 import upec.Symptom;
 
 rule"inserting patient symptoms into the wm"
-ruleflow-group"TeatingPhysicianRules1"
+ruleflow-group"TreatingPhysicianRules1"
 salience 4
 no-loop true
 when
@@ -15,7 +15,7 @@ System.out.println("insert fact:"+ sy.getDescription());
 end
 
 rule"Suggested test for the teating physician"
-ruleflow-group"TeatingPhysicianRules1"
+ruleflow-group"TreatingPhysicianRules1"
 salience 4
 no-loop true
 when
