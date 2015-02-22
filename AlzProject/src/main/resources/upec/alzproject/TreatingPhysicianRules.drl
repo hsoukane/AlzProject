@@ -2,6 +2,7 @@ package upec.alzproject;
 import upec.PatientRecord;
 import upec.Symptom;
 import upec.MedicalExamination;
+import upec.upec.NeuropsychologicalParameter;
 
 rule"inserting patient symptoms into the wm"
 ruleflow-group"TreatingPhysicianRules1"
@@ -29,4 +30,15 @@ System.out.println("hehe!!!!");
 examination2.setName("IADL evaluation");
 end
 
+rule"Suggested triage for the patient"
+ruleflow-group"TreatingPhysicianRules1"
+salience 4
+no-loop true
+when
+mmse1:upec.NeuropsychologicalParameter(name=="MMSE evaluation" && value<24 )
+iadl:upec.NeuropsychologicalParameter(name=="IADL evaluation" && value<8 )
 
+then
+
+upec.Assignement( )
+end
