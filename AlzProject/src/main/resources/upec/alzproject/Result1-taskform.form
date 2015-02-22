@@ -1,0 +1,32 @@
+
+<form id="955909657">
+<property name="subject" value=""/>
+<property name="name" value="Result1-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="2" name="triage1_urgency" type="InputText" id="793815326">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;urgency (triage1)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_triage1/urgency"/>
+<property name="outputBinding" value="triage1_/urgency"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="0" name="triage1_date" type="InputDate" id="1804291659">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;date (triage1)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_triage1/date"/>
+<property name="outputBinding" value="triage1_/date"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="1" name="triage1_service" type="InputText" id="1501491948">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;service (triage1)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_triage1/service"/>
+<property name="outputBinding" value="triage1_/service"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="_triage1" name="#FF54A7" type="dataModelerEntry" outId="triage1_" value="upec.Assignement" id="triage1"/>
+</form>
