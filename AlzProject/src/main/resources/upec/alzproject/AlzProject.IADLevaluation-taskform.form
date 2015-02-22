@@ -1,0 +1,32 @@
+
+<form id="366014004">
+<property name="subject" value=""/>
+<property name="name" value="AlzProject.IADLevaluation-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="0" name="iadl_date" type="InputDate" id="1569657789">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;date (iadl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="iadl/date"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="2" name="iadl_value" type="InputTextFloat" id="1047754935">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;value (iadl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="iadl/value"/>
+<property name="fieldClass" value="java.lang.Float"/>
+</field>
+<field position="1" name="iadl_name" type="InputText" id="538074229">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;name (iadl)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="iadl/name"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="" name="#0000A0" type="dataModelerEntry" outId="iadl" value="upec.NeuropsychologicalParameter" id="iadl"/>
+</form>
