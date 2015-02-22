@@ -3,6 +3,7 @@ import upec.PatientRecord;
 import upec.Symptom;
 import upec.MedicalExamination;
 import upec.NeuropsychologicalParameter;
+import upec.Assignement;
 
 rule"inserting patient symptoms into the wm"
 ruleflow-group"TreatingPhysicianRules1"
@@ -37,7 +38,7 @@ no-loop true
 when
 mmse1:upec.NeuropsychologicalParameter(name=="MMSE evaluation" && value<24 )
 iadl:upec.NeuropsychologicalParameter(name=="IADL evaluation" && value<8 )
-
+triage1:upec.Assignement(this!=null )
 then
-
+triage1.setService("Neurology service");
 end
