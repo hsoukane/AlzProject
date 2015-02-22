@@ -36,8 +36,8 @@ ruleflow-group"TreatingPhysicianRules1"
 salience 4
 no-loop true
 when
-mmse1:upec.NeuropsychologicalParameter(name=="MMSE evaluation" && value<24 )
-iadl:upec.NeuropsychologicalParameter(name=="IADL evaluation" && value<8 )
+mmse1:upec.NeuropsychologicalParameter(name=="MMSE score" && value<24 )
+iadl:upec.NeuropsychologicalParameter(name=="IADL score" && value<8 )
 triage1:upec.Assignement(this!=null )
 then
 triage1.setService("Alzheimer suspicion -> Neurology service");
@@ -48,8 +48,8 @@ ruleflow-group"TreatingPhysicianRules1"
 salience 4
 no-loop true
 when
-mmse1:upec.NeuropsychologicalParameter(name=="MMSE evaluation" && value>=24 )
-iadl:upec.NeuropsychologicalParameter(name=="IADL evaluation" && value==8 )
+mmse1:upec.NeuropsychologicalParameter(name=="MMSE score" && value>=24 )
+iadl:upec.NeuropsychologicalParameter(name=="IADL score" && value==8 )
 triage1:upec.Assignement(this!=null )
 then
 triage1.setService("No dementia is suspected->The patient must be seen again after six months");
