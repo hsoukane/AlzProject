@@ -40,5 +40,4 @@ iadl:upec.NeuropsychologicalParameter(name=="IADL evaluation" && value<8 )
 
 then
 
-upec.Assignement( )
 end
