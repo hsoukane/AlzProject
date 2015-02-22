@@ -2,7 +2,7 @@ package upec.alzproject;
 import upec.PatientRecord;
 import upec.Symptom;
 import upec.MedicalExamination;
-import upec.upec.NeuropsychologicalParameter;
+import upec.NeuropsychologicalParameter;
 
 rule"inserting patient symptoms into the wm"
 ruleflow-group"TreatingPhysicianRules1"
