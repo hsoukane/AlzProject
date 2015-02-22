@@ -1,0 +1,57 @@
+
+<form id="1616435513">
+<property name="subject" value=""/>
+<property name="name" value="AlzProject.Biologicalexaminations-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="1" name="examination1_name" type="InputText" id="951680801">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;name (examination1)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="examination1/name"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="0" name="examination1_date" type="InputDate" id="2041813401">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;date (examination1)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="examination1/date"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="5" name="examination2_result" type="InputText" id="478745233">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;result (examination2)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="examination2/result"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="2" name="examination1_result" type="InputText" id="1693856661">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;result (examination1)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="examination1/result"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="4" name="examination2_name" type="InputText" id="1723356264">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;name (examination2)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="examination2/name"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="3" name="examination2_date" type="InputDate" id="1154437689">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;date (examination2)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="examination2/date"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<dataHolder inputId="" name="#0000A0" type="dataModelerEntry" outId="examination1" value="upec.MedicalExamination" id="examination1"/>
+<dataHolder inputId="" name="#FF54A7" type="dataModelerEntry" outId="examination2" value="upec.MedicalExamination" id="examination2"/>
+</form>
