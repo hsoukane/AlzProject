@@ -40,5 +40,17 @@ mmse1:upec.NeuropsychologicalParameter(name=="MMSE evaluation" && value<24 )
 iadl:upec.NeuropsychologicalParameter(name=="IADL evaluation" && value<8 )
 triage1:upec.Assignement(this!=null )
 then
-triage1.setService("Neurology service");
+triage1.setService("Alzheimer suspicion -> Neurology service");
+end
+
+rule"Suggested triage for the patient 1"
+ruleflow-group"TreatingPhysicianRules1"
+salience 4
+no-loop true
+when
+mmse1:upec.NeuropsychologicalParameter(name=="MMSE evaluation" && value>=24 )
+iadl:upec.NeuropsychologicalParameter(name=="IADL evaluation" && value==8 )
+triage1:upec.Assignement(this!=null )
+then
+triage1.setService("No dementia is suspected");
 end
