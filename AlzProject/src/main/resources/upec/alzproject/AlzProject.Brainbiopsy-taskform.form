@@ -1,0 +1,32 @@
+
+<form id="1619429895">
+<property name="subject" value=""/>
+<property name="name" value="AlzProject.Brainbiopsy-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="0" name="examination_date" type="InputDate" id="1916992909">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;date (examination)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="examination/date"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="2" name="examination_result" type="InputText" id="1267483171">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;result (examination)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="examination/result"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="examination_name" type="InputText" id="2049145075">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;name (examination)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value=""/>
+<property name="outputBinding" value="examination/name"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<dataHolder inputId="" name="#0000A0" type="dataModelerEntry" outId="examination" value="upec.MedicalExamination" id="examination"/>
+</form>
