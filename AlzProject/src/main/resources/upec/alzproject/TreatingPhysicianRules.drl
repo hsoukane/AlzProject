@@ -40,7 +40,7 @@ mmse1:upec.NeuropsychologicalParameter(name=="MMSE score" && value<24 )
 iadl:upec.NeuropsychologicalParameter(name=="IADL score" && value<8 )
 triage1:upec.Assignement(this!=null )
 then
-triage1.setService("Biological examinations(blood and urinary tests must be prescribed)");
+triage1.setService("Suspicion of dementia -> The patient must be affected to the neurology service");
 end
 
 rule"Suggested triage for the patient 1"
