@@ -1,2 +1,30 @@
 package upec.alzproject;
+import upec.PatientRecord;
+import upec.Symptom;
+import upec.MedicalExamination;
+import upec.NeuropsychologicalParameter;
+import upec.Assignement;
 
+rule "inserting patient clinical examinations into the wm"
+ruleflow-group"NeurolgyService1"
+salience 4
+no-loop true
+when
+patient:upec.PatientRecord( exams:medicalExaminations)
+exam:upec.MedicalExamination( )from exams
+then
+insertLogical(exam);
+System.out.println("insert fact:"+ exam.getName()+ "result:"+exam.getResult());
+end
+
+rule"inserting neuropsychological parameters into the wm"
+ruleflow-group"NeurologyService1"
+salience 4
+no-loop true
+when
+patient:upec.PatientRecord( neuroparameters:neuropsychologicalParameters)
+neuroparameter: NeuropsychologicalParameter() from neuroparameters
+then
+insertLogical(neuroparameter);
+System.out.println("insert fact:"+ neuroparameter.getName()+ "Value:"+ neuroparameter.getValue());
+end
