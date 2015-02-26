@@ -1,0 +1,24 @@
+
+<form id="214731545">
+<property name="subject" value=""/>
+<property name="name" value="Medication-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="1" name="treatment1_name" type="InputText" id="1570460749">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;name (treatment1)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_treatment1/name"/>
+<property name="outputBinding" value="treatment1_/name"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="0" name="treatment1_date" type="InputDate" id="392368469">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;date (treatment1)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_treatment1/date"/>
+<property name="outputBinding" value="treatment1_/date"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<dataHolder inputId="_treatment1" name="#B29FE4" type="dataModelerEntry" outId="treatment1_" value="upec.Treatment" id="treatment1"/>
+</form>
