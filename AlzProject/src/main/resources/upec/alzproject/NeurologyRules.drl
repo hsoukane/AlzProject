@@ -6,7 +6,7 @@ import upec.NeuropsychologicalParameter;
 import upec.Assignement;
 
 rule "inserting patient clinical examinations into the wm"
-ruleflow-group"NeurolgyService1"
+ruleflow-group"NeurologyService1"
 salience 4
 no-loop true
 when
