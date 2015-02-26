@@ -35,91 +35,10 @@ ruleflow-group"NeurologyService1"
 salience 4
 no-loop true
 when
-exam:upec.MedicalExamination((name=="IRM" || name=="CT scanner"  ) && result=="Cortical atrophy")
+exam:upec.MedicalExamination((name=="IRM" || name=="CT scanner"  ) && (result=="Cortical atrophy"|| result=="Stoke lesions"))
 diagnosis: upec.Diagnosis(this!=null )
 then
 diagnosis.setValue("Alzheimer");
-System.out.println("Diagnosis: "+ diagnosis.getValue());
-end
-
-rule"Neurology diagnosis2"
-ruleflow-group"NeurologyService1"
-salience 4
-no-loop true
-when
-exam:upec.MedicalExamination(name=="Brain biopsy" && result!="Nothing")
-diagnosis: upec.Diagnosis(this!=null )
-then
-diagnosis.setValue("Presence of dementia other than Alzheimer's");
-System.out.println("Diagnosis: "+ diagnosis.getValue());
-end
-
-
-rule"Neurology diagnosis3"
-ruleflow-group"NeurologyService1"
-salience 4
-no-loop true
-when
-exam:upec.MedicalExamination(name=="Electroencephalogram" && result!="Nothing")
-diagnosis: upec.Diagnosis(this!=null )
-then
-diagnosis.setValue("Presence of dementia other than Alzheimer's");
-System.out.println("Diagnosis: "+ diagnosis.getValue());
-end
-
-rule"Neurology diagnosis4"
-ruleflow-group"NeurologyService1"
-salience 4
-no-loop true
-when
-exam:upec.MedicalExamination(name=="CSF analysis" && result!="Nothing")
-diagnosis: upec.Diagnosis(this!=null )
-then
-diagnosis.setValue("Presence of dementia other than Alzheimer's");
-System.out.println("Diagnosis: "+ diagnosis.getValue());
-end
-
-rule"Neurology diagnosis5"
-ruleflow-group"NeurologyService1"
-salience 4
-no-loop true
-when
-exam:upec.MedicalExamination((name=="IRM" || name=="CT scanner" ) && result!="Nothing" && result!="Cortical atrophy")
-diagnosis: upec.Diagnosis(this!=null )
-then
-diagnosis.setValue("Presence of dementia other than Alzheimer's");
-System.out.println("Diagnosis: "+ diagnosis.getValue());
-end
-
-rule"Neurology diagnosis6"
-ruleflow-group"NeurologyService1"
-salience 4
-no-loop true
-when
-exam1:upec.MedicalExamination((name=="IRM" || name=="CT scanner" ) && result=="Nothing")
-exam2:upec.MedicalExamination(name=="Brain biopsy" && result=="Nothing")
-exam3:upec.MedicalExamination(name=="Electroencephalogram" && result=="Nothing")
-exam4:upec.MedicalExamination(name=="CSF analysis" && result=="Nothing")
-mmse:upec.NeuropsychologicalParameter(name=="MMSE score" && value<24 )
-diagnosis: upec.Diagnosis(this!=null )
-then
-diagnosis.setValue("Alzheimer");
-System.out.println("Diagnosis: "+ diagnosis.getValue());
-end
-
-rule"Neurology diagnosis7"
-ruleflow-group"NeurologyService1"
-salience 2
-no-loop true
-when
-exam1:upec.MedicalExamination((name=="IRM" || name=="CT scanner" ) && result=="Nothing")
-exam2:upec.MedicalExamination(name=="Brain biopsy" && result=="Nothing")
-exam3:upec.MedicalExamination(name=="Electroencephalogram" && result=="Nothing")
-exam4:upec.MedicalExamination(name=="CSF analysis" && result=="Nothing")
-mmse:upec.NeuropsychologicalParameter(name=="MMSE score" && value>=24 )
-diagnosis: upec.Diagnosis(this!=null )
-then
-diagnosis.setValue("No case of demantia");
 System.out.println("Diagnosis: "+ diagnosis.getValue());
 end
 
@@ -129,7 +48,7 @@ salience 2
 no-loop true
 when
 gds: upec.NeuropsychologicalParameter(name=="GDS score" && value>=9 )
-diagnosis1:upec.Diagnosis(value=="No case of demantia"||value=="Alzheimer"|| value=="Presence of dementia other than Alzheimer's")
+diagnosis1:upec.Diagnosis(value=="Alzheimer")
 diagnosis2:upec.Diagnosis( this!=null)
 then
 diagnosis2.setValue("Depression, behavioral and emotional disorders");
