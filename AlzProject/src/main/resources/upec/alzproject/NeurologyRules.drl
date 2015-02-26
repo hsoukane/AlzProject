@@ -40,7 +40,7 @@ when
 mmse:upec.NeuropsychologicalParameter( name=="MMSE score" && value>20)
 diagnosis:upec.Diagnosis( this!=null)
 then
-diagnosis.setValue("Alhzeimer mild stage");
+diagnosis.setValue("Alzheimer mild stage");
 System.out.println("Diagnosis: "+ diagnosis.getValue());
 end
 
@@ -52,7 +52,7 @@ when
 mmse:upec.NeuropsychologicalParameter( name=="MMSE score" && value>10 && value <20)
 diagnosis:upec.Diagnosis( this!=null)
 then
-diagnosis.setValue("Alhzeimer moderate stage");
+diagnosis.setValue("Alzheimer moderate stage");
 System.out.println("Diagnosis: "+ diagnosis.getValue());
 end
 
@@ -74,7 +74,7 @@ ruleflow-group"NeurologyService1"
 salience 4
 no-loop true
 when
-diagnosis:upec.Diagnosis(value=="Alhzeimer mild stage")
+diagnosis:upec.Diagnosis(value=="Alzheimer mild stage")
 treatment:upec.Treatment( )
 then
 treatment.setName("cholinesterase inhibitor");
@@ -85,7 +85,7 @@ ruleflow-group"NeurologyService1"
 salience 4
 no-loop true
 when
-diagnosis:upec.Diagnosis(value=="Alhzeimer moderate stage")
+diagnosis:upec.Diagnosis(value=="Alzheimer moderate stage")
 treatment:upec.Treatment( )
 then
 treatment.setName("Cholinesterase inhibitor or an anti-glutamate");
@@ -138,7 +138,7 @@ rule"assistance plan 3"
 ruleflow-group"NeurolgyService1"
 salience 4
 when
-syp1:upec.Symptom(description=="apraxia" )
+syp1:upec.Symptom(description=="Apraxia" )
 plan1:upec.AssistancePlan(this!=null )
 then
 plan1.setDescription("Physical exercises, physiotherapy");
