@@ -47,7 +47,7 @@ ruleflow-group"NeurologyService1"
 salience 4
 no-loop true
 when
-exam:upec.MedicalExamination(result!="Cortical atrophy" && result=="Nothing")
+exam:upec.MedicalExamination(name=="Brain biopsy" && result!="Nothing")
 diagnosis: upec.Diagnosis(this!=null )
 then
 diagnosis.setValue("Presence of dementia other than Alzheimer's");
@@ -55,4 +55,54 @@ System.out.println("Diagnosis:"+ diagnosis.getValue());
 end
 
 
+rule"Neurology diagnosis3"
+ruleflow-group"NeurologyService1"
+salience 4
+no-loop true
+when
+exam:upec.MedicalExamination(name=="Electroencephalogram" && result!="Nothing")
+diagnosis: upec.Diagnosis(this!=null )
+then
+diagnosis.setValue("Presence of dementia other than Alzheimer's");
+System.out.println("Diagnosis:"+ diagnosis.getValue());
+end
 
+rule"Neurology diagnosis4"
+ruleflow-group"NeurologyService1"
+salience 4
+no-loop true
+when
+exam:upec.MedicalExamination(name=="CSF analysis" && result!="Nothing")
+diagnosis: upec.Diagnosis(this!=null )
+then
+diagnosis.setValue("Presence of dementia other than Alzheimer's");
+System.out.println("Diagnosis:"+ diagnosis.getValue());
+end
+
+rule"Neurology diagnosis5"
+ruleflow-group"NeurologyService1"
+salience 4
+no-loop true
+when
+exam:upec.MedicalExamination((name=="IRM" || name=="CT scanner" ) && result!="Nothing" && result!="Cortical atrophy")
+diagnosis: upec.Diagnosis(this!=null )
+then
+diagnosis.setValue("Presence of dementia other than Alzheimer's");
+System.out.println("Diagnosis:"+ diagnosis.getValue());
+end
+
+rule"Neurology diagnosis6"
+ruleflow-group"NeurologyService1"
+salience 4
+no-loop true
+when
+exam1:upec.MedicalExamination((name=="IRM" || name=="CT scanner" ) && result!="Nothing" && result!="Cortical atrophy")
+exam2:upec.MedicalExamination(name=="Brain biopsy" && result=="Nothing")
+exam3:upec.MedicalExamination(name=="Electroencephalogram" && result=="Nothing")
+exam4:upec.MedicalExamination(name=="CSF analysis" && result=="Nothing")
+mmse:upec.NeuropsychologicalParameter(name=="MMSE score" && value<24 )
+diagnosis: upec.Diagnosis(this!=null )
+then
+diagnosis.setValue("Alzheimer");
+System.out.println("Diagnosis:"+ diagnosis.getValue());
+end
