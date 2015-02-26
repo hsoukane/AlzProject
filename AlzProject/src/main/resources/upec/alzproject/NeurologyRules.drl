@@ -102,7 +102,7 @@ then
 treatment.setName("Anti-glutamate");
 end
 
-rule"inserting patient symptoms into the wm"
+rule"reinserting patient symptoms into the wm"
 ruleflow-group"NeurolgyService1"
 salience 4
 no-loop true
