@@ -1,0 +1,41 @@
+
+<form id="1763177325">
+<property name="subject" value=""/>
+<property name="name" value="Assistanceplans-taskform.form"/>
+<property name="displayMode" value="default"/>
+<property name="status" value="0"/>
+<field position="3" name="plan2_description" type="InputText" id="613045652">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;description (plan2)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_plan2/description"/>
+<property name="outputBinding" value="plan2_/description"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="1" name="plan1_description" type="InputText" id="983602015">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;description (plan1)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_plan1/description"/>
+<property name="outputBinding" value="plan1_/description"/>
+<property name="fieldClass" value="java.lang.String"/>
+</field>
+<field position="2" name="plan2_date" type="InputDate" id="31708971">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;date (plan2)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_plan2/date"/>
+<property name="outputBinding" value="plan2_/date"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<field position="0" name="plan1_date" type="InputDate" id="231292332">
+<property name="fieldRequired" value="false"/>
+<property name="label" value="quot;enquot;,quot;date (plan1)quot;"/>
+<property name="readonly" value="false"/>
+<property name="inputBinding" value="_plan1/date"/>
+<property name="outputBinding" value="plan1_/date"/>
+<property name="fieldClass" value="java.util.Date"/>
+</field>
+<dataHolder inputId="_plan1" name="#BBBBBB" type="dataModelerEntry" outId="plan1_" value="upec.AssistancePlan" id="plan1"/>
+<dataHolder inputId="_plan2" name="#000000" type="dataModelerEntry" outId="plan2_" value="upec.AssistancePlan" id="plan2"/>
+</form>
