@@ -4,6 +4,7 @@ import upec.Symptom;
 import upec.MedicalExamination;
 import upec.NeuropsychologicalParameter;
 import upec.Assignement;
+import upec.Diagnosis;
 
 rule "inserting patient clinical examinations into the wm"
 ruleflow-group"NeurologyService1"
@@ -28,3 +29,30 @@ then
 insertLogical(neuroparameter);
 System.out.println("insert fact:"+ neuroparameter.getName()+ "Value:"+ neuroparameter.getValue());
 end
+
+rule "Neurology diagnosis1"
+ruleflow-group"NeurologyService1"
+salience 4
+no-loop true
+when
+exam:upec.MedicalExamination((name=="IRM" || name=="CT scanner"  ) && result=="Cortical atrophy")
+diagnosis: upec.Diagnosis(this!=null )
+then
+diagnosis.setValue("Alzheimer");
+System.out.println("Diagnosis:"+ diagnosis.getValue());
+end
+
+rule"Neurology diagnosis2"
+ruleflow-group"NeurologyService1"
+salience 4
+no-loop true
+when
+exam:upec.MedicalExamination(result!="Cortical atrophy" && result!="Nothing")
+diagnosis: upec.Diagnosis(this!=null )
+then
+diagnosis.setValue("Presence of dementia other than Alzheimer's");
+System.out.println("Diagnosis:"+ diagnosis.getValue());
+end
+
+
+
