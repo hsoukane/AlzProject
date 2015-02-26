@@ -30,42 +30,18 @@ insertLogical(neuroparameter);
 System.out.println("insert fact: "+ neuroparameter.getName()+ "Value:"+ neuroparameter.getValue());
 end
 
-rule "Neurology diagnosis1"
-ruleflow-group"NeurologyService1"
-salience 4
-no-loop true
-when
-exam:upec.MedicalExamination((name=="IRM" || name=="CT scanner"  ) && (result=="Cortical atrophy"|| result=="Stoke lesions"))
-diagnosis: upec.Diagnosis(this!=null )
-then
-diagnosis.setValue("Alzheimer");
-System.out.println("Diagnosis: "+ diagnosis.getValue());
-end
 
-rule"Depression detection"
-ruleflow-group"NeurologyService1"
-salience 2
-no-loop true
-when
-gds: upec.NeuropsychologicalParameter(name=="GDS score" && value>=9 )
-diagnosis1:upec.Diagnosis(value=="Alzheimer")
-diagnosis2:upec.Diagnosis( this!=null)
-then
-diagnosis2.setValue("Depression, behavioral and emotional disorders");
-System.out.println("Diagnosis: "+ diagnosis2.getValue());
-end
 
 rule"Alzheimer stage 1"
 ruleflow-group"NeurologyService1"
 salience 2
 no-loop true
 when
-diagnosis1:upec.Diagnosis(value=="Alzheimer")
 mmse:upec.NeuropsychologicalParameter( name=="MMSE score" && value>20)
-diagnosis3:upec.Diagnosis( this!=null)
+diagnosis:upec.Diagnosis( this!=null)
 then
-diagnosis3.setValue("Alhzeimer mild stage");
-System.out.println("Diagnosis3: "+ diagnosis3.getValue());
+diagnosis.setValue("Alhzeimer mild stage");
+System.out.println("Diagnosis: "+ diagnosis.getValue());
 end
 
 rule"Alzheimer stage 2"
@@ -73,12 +49,11 @@ ruleflow-group"NeurologyService1"
 salience 2
 no-loop true
 when
-diagnosis1:upec.Diagnosis(value=="Alzheimer")
 mmse:upec.NeuropsychologicalParameter( name=="MMSE score" && value>10 && value <20)
-diagnosis3:upec.Diagnosis( this!=null)
+diagnosis:upec.Diagnosis( this!=null)
 then
-diagnosis3.setValue("Alhzeimer moderate stage");
-System.out.println("Diagnosis3: "+ diagnosis3.getValue());
+diagnosis.setValue("Alhzeimer moderate stage");
+System.out.println("Diagnosis: "+ diagnosis.getValue());
 end
 
 
@@ -87,11 +62,10 @@ ruleflow-group"NeurologyService1"
 salience 2
 no-loop true
 when
-diagnosis1:upec.Diagnosis(value=="Alzheimer")
 mmse:upec.NeuropsychologicalParameter(name=="MMSE score" && value <10)
-diagnosis3:upec.Diagnosis( this!=null)
+diagnosis:upec.Diagnosis( this!=null)
 then
-diagnosis3.setValue("Alhzeimer severe stage");
-System.out.println("Diagnosis3: "+ diagnosis3.getValue());
+diagnosis.setValue("Alhzeimer severe stage");
+System.out.println("Diagnosis: "+ diagnosis.getValue());
 end
 
