@@ -47,7 +47,7 @@ ruleflow-group"NeurologyService1"
 salience 4
 no-loop true
 when
-exam:upec.MedicalExamination(result!="Cortical atrophy" && result!="Nothing")
+exam:upec.MedicalExamination(result!="Cortical atrophy" && result=="Nothing")
 diagnosis: upec.Diagnosis(this!=null )
 then
 diagnosis.setValue("Presence of dementia other than Alzheimer's");
