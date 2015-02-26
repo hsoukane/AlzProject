@@ -15,7 +15,7 @@ patient:upec.PatientRecord( exams:medicalExaminations)
 exam:upec.MedicalExamination( )from exams
 then
 insertLogical(exam);
-System.out.println("insert fact:"+ exam.getName()+ "result:"+exam.getResult());
+System.out.println("insert fact: "+ exam.getName()+ "result:"+exam.getResult());
 end
 
 rule"inserting neuropsychological parameters into the wm"
@@ -27,7 +27,7 @@ patient:upec.PatientRecord( neuroparameters:neuropsychologicalParameters)
 neuroparameter: NeuropsychologicalParameter() from neuroparameters
 then
 insertLogical(neuroparameter);
-System.out.println("insert fact:"+ neuroparameter.getName()+ "Value:"+ neuroparameter.getValue());
+System.out.println("insert fact: "+ neuroparameter.getName()+ "Value:"+ neuroparameter.getValue());
 end
 
 rule "Neurology diagnosis1"
@@ -39,7 +39,7 @@ exam:upec.MedicalExamination((name=="IRM" || name=="CT scanner"  ) && result=="C
 diagnosis: upec.Diagnosis(this!=null )
 then
 diagnosis.setValue("Alzheimer");
-System.out.println("Diagnosis:"+ diagnosis.getValue());
+System.out.println("Diagnosis: "+ diagnosis.getValue());
 end
 
 rule"Neurology diagnosis2"
@@ -51,7 +51,7 @@ exam:upec.MedicalExamination(name=="Brain biopsy" && result!="Nothing")
 diagnosis: upec.Diagnosis(this!=null )
 then
 diagnosis.setValue("Presence of dementia other than Alzheimer's");
-System.out.println("Diagnosis:"+ diagnosis.getValue());
+System.out.println("Diagnosis: "+ diagnosis.getValue());
 end
 
 
@@ -64,7 +64,7 @@ exam:upec.MedicalExamination(name=="Electroencephalogram" && result!="Nothing")
 diagnosis: upec.Diagnosis(this!=null )
 then
 diagnosis.setValue("Presence of dementia other than Alzheimer's");
-System.out.println("Diagnosis:"+ diagnosis.getValue());
+System.out.println("Diagnosis: "+ diagnosis.getValue());
 end
 
 rule"Neurology diagnosis4"
@@ -76,7 +76,7 @@ exam:upec.MedicalExamination(name=="CSF analysis" && result!="Nothing")
 diagnosis: upec.Diagnosis(this!=null )
 then
 diagnosis.setValue("Presence of dementia other than Alzheimer's");
-System.out.println("Diagnosis:"+ diagnosis.getValue());
+System.out.println("Diagnosis: "+ diagnosis.getValue());
 end
 
 rule"Neurology diagnosis5"
@@ -88,7 +88,7 @@ exam:upec.MedicalExamination((name=="IRM" || name=="CT scanner" ) && result!="No
 diagnosis: upec.Diagnosis(this!=null )
 then
 diagnosis.setValue("Presence of dementia other than Alzheimer's");
-System.out.println("Diagnosis:"+ diagnosis.getValue());
+System.out.println("Diagnosis: "+ diagnosis.getValue());
 end
 
 rule"Neurology diagnosis6"
@@ -104,7 +104,7 @@ mmse:upec.NeuropsychologicalParameter(name=="MMSE score" && value<24 )
 diagnosis: upec.Diagnosis(this!=null )
 then
 diagnosis.setValue("Alzheimer");
-System.out.println("Diagnosis:"+ diagnosis.getValue());
+System.out.println("Diagnosis: "+ diagnosis.getValue());
 end
 
 rule"Neurology diagnosis7"
@@ -120,7 +120,7 @@ mmse:upec.NeuropsychologicalParameter(name=="MMSE score" && value>=24 )
 diagnosis: upec.Diagnosis(this!=null )
 then
 diagnosis.setValue("No case of demantia");
-System.out.println("Diagnosis:"+ diagnosis.getValue());
+System.out.println("Diagnosis: "+ diagnosis.getValue());
 end
 
 rule"Depression detection"
@@ -133,7 +133,7 @@ diagnosis1:upec.Diagnosis(value=="No case of demantia"||value=="Alzheimer"|| val
 diagnosis2:upec.Diagnosis( this!=null)
 then
 diagnosis2.setValue("Depression, behavioral and emotional disorders");
-System.out.println("Diagnosis:"+ diagnosis2.getValue());
+System.out.println("Diagnosis: "+ diagnosis2.getValue());
 end
 
 rule"Alzheimer stage 1"
@@ -146,6 +146,7 @@ mmse:upec.NeuropsychologicalParameter( value>20)
 diagnosis3:upec.Diagnosis( this!=null)
 then
 diagnosis3.setValue("Alhzeimer mild stage");
+System.out.println("Diagnosis3: "+ diagnosis3.getValue());
 end
 
 rule"Alzheimer stage 2"
@@ -158,8 +159,8 @@ mmse:upec.NeuropsychologicalParameter( value>10 && value <20)
 diagnosis3:upec.Diagnosis( this!=null)
 then
 diagnosis3.setValue("Alhzeimer moderate stage");
+System.out.println("Diagnosis3: "+ diagnosis3.getValue());
 end
-
 
 
 rule"Alzheimer stage 3"
@@ -172,5 +173,6 @@ mmse:upec.NeuropsychologicalParameter(value <10)
 diagnosis3:upec.Diagnosis( this!=null)
 then
 diagnosis3.setValue("Alhzeimer severe stage");
+System.out.println("Diagnosis3: "+ diagnosis3.getValue());
 end
 
