@@ -128,7 +128,7 @@ ruleflow-group"NeurologyService1"
 salience 2
 no-loop true
 when
-gds: upec.NeuropsychologicalParameter(value>=9 )
+gds: upec.NeuropsychologicalParameter(name=="GDS score" && value>=9 )
 diagnosis1:upec.Diagnosis(value=="No case of demantia"||value=="Alzheimer"|| value=="Presence of dementia other than Alzheimer's")
 diagnosis2:upec.Diagnosis( this!=null)
 then
@@ -142,7 +142,7 @@ salience 2
 no-loop true
 when
 diagnosis1:upec.Diagnosis(value=="Alzheimer")
-mmse:upec.NeuropsychologicalParameter( value>20)
+mmse:upec.NeuropsychologicalParameter( name=="MMSE score" && value>20)
 diagnosis3:upec.Diagnosis( this!=null)
 then
 diagnosis3.setValue("Alhzeimer mild stage");
@@ -155,7 +155,7 @@ salience 2
 no-loop true
 when
 diagnosis1:upec.Diagnosis(value=="Alzheimer")
-mmse:upec.NeuropsychologicalParameter( value>10 && value <20)
+mmse:upec.NeuropsychologicalParameter( name=="MMSE score" && value>10 && value <20)
 diagnosis3:upec.Diagnosis( this!=null)
 then
 diagnosis3.setValue("Alhzeimer moderate stage");
@@ -169,7 +169,7 @@ salience 2
 no-loop true
 when
 diagnosis1:upec.Diagnosis(value=="Alzheimer")
-mmse:upec.NeuropsychologicalParameter(value <10)
+mmse:upec.NeuropsychologicalParameter(name=="MMSE score" && value <10)
 diagnosis3:upec.Diagnosis( this!=null)
 then
 diagnosis3.setValue("Alhzeimer severe stage");
