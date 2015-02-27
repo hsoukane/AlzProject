@@ -144,18 +144,18 @@ treatment.setName("Cholinesterase inhibitor or an anti-glutamate");
 end
 
 rule"alzheimer treatment3"
-ruleflow-group"NeurologyServic21"
+ruleflow-group"NeurologyService1"
 salience 4
 no-loop true
 when
-diagnosis:upec.Diagnosis(value=="Alhzeimer severe stage")
+diagnosis:upec.Diagnosis(value=="Alzheimer severe stage")
 treatment:upec.Treatment( )
 then
 treatment.setName("Anti-glutamate");
 end
 
 rule"reinserting patient symptoms into the wm"
-ruleflow-group"NeurolgyService1"
+ruleflow-group"NeurolgyService2"
 salience 4
 no-loop true
 when
@@ -165,6 +165,19 @@ then
 insertLogical(sy);
 System.out.println("insert fact:"+ sy.getDescription());
 end
+
+rule"reinserting neuropsychological parameters into the wm"
+ruleflow-group"NeurologyService2"
+salience 4
+no-loop true
+when
+patient:upec.PatientRecord( neuroparameters:neuropsychologicalParameters)
+neuroparameter: NeuropsychologicalParameter() from neuroparameters
+then
+insertLogical(neuroparameter);
+System.out.println("insert fact: "+ neuroparameter.getName()+ "Value:"+ neuroparameter.getValue());
+end
+
 
 rule"assistance plan 1"
 ruleflow-group"NeurolgyService2"
@@ -194,4 +207,14 @@ syp1:upec.Symptom(description=="Apraxia" )
 plan1:upec.AssistancePlan(this!=null )
 then
 plan1.setDescription("Physical exercises, physiotherapy");
+end
+
+rule"assistance plan 4"
+ruleflow-group"NeurolgyService2"
+salience 4
+when
+npi:upec.NeuropsychologicalParameter(name=="NPI" && value<16)											
+plan1:upec.AssistancePlan(this!=null )
+then
+plan1.setDescription("Psychiatric treatment");
 end
