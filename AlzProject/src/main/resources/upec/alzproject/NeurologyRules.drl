@@ -110,7 +110,7 @@ end
 
 
 rule"Alzheimer stage 3"
-ruleflow-group"NeurologyService1"
+ruleflow-group"NeurologyService2"
 salience 4
 no-loop true
 when
