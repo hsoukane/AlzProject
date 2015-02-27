@@ -51,8 +51,20 @@ then
 diagnosis.setValue("Alzheimer");
 end
 
+rule "diagnosisRule3"
+ruleflow-group"NeurologyService1"
+salience 4
+when
+exam1: upec.MedicalExamination(( name=="IRM" || name=="CT scanner") && (result=="Nothing"))
+mmse:upec.NeuropsychologicalParameter(name=="MMSE score" && value<24 )
+gds:upec.NeuropsychologicalParameter( name=="GDS score" && value>=10)
+diagnosis:upec.Diagnosis(this!=null )
+then
+diagnosis.setValue("Severe depression");
+end
 
-rule"diagnosisRule3"
+
+rule"diagnosisRule4"
 ruleflow-group"NeurologyService1"
 salience 4
 when
