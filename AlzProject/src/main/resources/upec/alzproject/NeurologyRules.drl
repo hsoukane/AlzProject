@@ -30,10 +30,50 @@ insertLogical(neuroparameter);
 System.out.println("insert fact: "+ neuroparameter.getName()+ "Value:"+ neuroparameter.getValue());
 end
 
+rule "diagnosisRule1"
+ruleflow-group"NeurologyService1"
+salience 4
+when
+exam1: upec.MedicalExamination(( name=="IRM" || name=="CT scanner") && (result=="CVA lesions" ||result=="Cortical atrophy"))
+diagnosis:upec.Diagnosis(this!=null )
+then
+diagnosis.setValue("Alzheimer");
+end
+
+rule "diagnosisRule2"
+ruleflow-group"NeurologyService1"
+salience 4
+when
+exam1: upec.MedicalExamination(( name=="IRM" || name=="CT scanner") && (result!="CVA lesions" ||result!="Cortical atrophy"))
+mmse:upec.NeuropsychologicalParameter(name=="MMSE score" && value<24 )
+diagnosis:upec.Diagnosis(this!=null )
+then
+diagnosis.setValue("Alzheimer");
+end
+
+
+rule"diagnosisRule3"
+ruleflow-group"NeurologyService1"
+salience 4
+when
+(exam1:upec.MedicalExamination(name=="CSF analysis" && result!="Nothing" )||
+exam2:upec.MedicalExamination(name=="Electroencephalogram" && result!="Nothing" )||
+exam3:upec.MedicalExamination(( name=="IRM" || name=="CT scanner") && (result!="CVA lesions" ||result!="Cortical atrophy"))||
+exam4:upec.MedicalExamination(name=="Blood test" && result!="Nothing" )||
+exam5:upec.MedicalExamination(name=="Urinary analysis" && result!="Nothing" ))
+diagnosis:upec.Diagnosis(this!=null )
+then
+diagnosis.setValue("Presence of Dementia other than Alzheimer's or other disease");
+end
+
+
+
+
+
 
 
 rule"Alzheimer stage 1"
-ruleflow-group"NeurologyService1"
+ruleflow-group"NeurologyService2"
 salience 4
 no-loop true
 when
@@ -45,7 +85,7 @@ System.out.println("Diagnosis: "+ diagnosis.getValue());
 end
 
 rule"Alzheimer stage 2"
-ruleflow-group"NeurologyService1"
+ruleflow-group"NeurologyService2"
 salience 4
 no-loop true
 when
@@ -70,7 +110,7 @@ System.out.println("Diagnosis: "+ diagnosis.getValue());
 end
 
 rule"alzheimer treatment1"
-ruleflow-group"NeurologyService1"
+ruleflow-group"NeurologyService2"
 salience 4
 no-loop true
 when
@@ -81,7 +121,7 @@ treatment.setName("cholinesterase inhibitor");
 end
 
 rule"alzheimer treatment2"
-ruleflow-group"NeurologyService1"
+ruleflow-group"NeurologyService2"
 salience 4
 no-loop true
 when
@@ -92,7 +132,7 @@ treatment.setName("Cholinesterase inhibitor or an anti-glutamate");
 end
 
 rule"alzheimer treatment3"
-ruleflow-group"NeurologyService1"
+ruleflow-group"NeurologyServic21"
 salience 4
 no-loop true
 when
@@ -115,7 +155,7 @@ System.out.println("insert fact:"+ sy.getDescription());
 end
 
 rule"assistance plan 1"
-ruleflow-group"NeurolgyService1"
+ruleflow-group"NeurolgyService2"
 salience 4
 when
 syp1:upec.Symptom(description=="Aphasia" )
@@ -125,7 +165,7 @@ plan1.setDescription("Speech therapy");
 end
 
 rule"assistance plan 2"
-ruleflow-group"NeurolgyService1"
+ruleflow-group"NeurolgyService2"
 salience 4
 when
 syp1:upec.Symptom(description=="Cognitive impairment" )
@@ -135,7 +175,7 @@ plan1.setDescription("cognitive stimulation and workshops memories");
 end
 
 rule"assistance plan 3"
-ruleflow-group"NeurolgyService1"
+ruleflow-group"NeurolgyService2"
 salience 4
 when
 syp1:upec.Symptom(description=="Apraxia" )
