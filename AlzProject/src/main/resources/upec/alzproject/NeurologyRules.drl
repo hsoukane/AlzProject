@@ -44,7 +44,7 @@ rule "diagnosisRule2"
 ruleflow-group"NeurologyService1"
 salience 4
 when
-exam1: upec.MedicalExamination(( name=="IRM" || name=="CT scanner") && (result!="CVA lesions" ||result!="Cortical atrophy"))
+exam1: upec.MedicalExamination(( name=="IRM" || name=="CT scanner") && (result=="Nothing"))
 mmse:upec.NeuropsychologicalParameter(name=="MMSE score" && value<24 )
 diagnosis:upec.Diagnosis(this!=null )
 then
@@ -58,7 +58,7 @@ salience 4
 when
 (exam1:upec.MedicalExamination(name=="CSF analysis" && result!="Nothing" )||
 exam2:upec.MedicalExamination(name=="Electroencephalogram" && result!="Nothing" )||
-exam3:upec.MedicalExamination(( name=="IRM" || name=="CT scanner") && (result!="CVA lesions" ||result!="Cortical atrophy"))||
+exam3:upec.MedicalExamination(( name=="IRM" || name=="CT scanner") && (result!="CVA lesions" ||result!="Cortical atrophy"||result!="Nothing"))||
 exam4:upec.MedicalExamination(name=="Blood test" && result!="Nothing" )||
 exam5:upec.MedicalExamination(name=="Urinary analysis" && result!="Nothing" ))
 diagnosis:upec.Diagnosis(this!=null )
