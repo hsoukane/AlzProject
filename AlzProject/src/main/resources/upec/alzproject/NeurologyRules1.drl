@@ -76,7 +76,7 @@ salience 4
 no-loop true
 when
 diagnosis:upec.Diagnosis(value=="Alzheimer mild stage")
-treatment:upec.Treatment( )
+treatment:upec.Treatment( this!=null)
 then
 treatment.setName("cholinesterase inhibitor");
 end
@@ -87,18 +87,18 @@ salience 4
 no-loop true
 when
 diagnosis:upec.Diagnosis(value=="Alzheimer moderate stage")
-treatment:upec.Treatment( )
+treatment:upec.Treatment( this!=null)
 then
 treatment.setName("Cholinesterase inhibitor or an anti-glutamate");
 end
 
 rule"alzheimer treatment3"
-ruleflow-group"NeurologyService1"
+ruleflow-group"NeurologyService2"
 salience 4
 no-loop true
 when
 diagnosis:upec.Diagnosis(value=="Alzheimer severe stage")
-treatment:upec.Treatment( )
+treatment:upec.Treatment(this!=null )
 then
 treatment.setName("Anti-glutamate");
 end
