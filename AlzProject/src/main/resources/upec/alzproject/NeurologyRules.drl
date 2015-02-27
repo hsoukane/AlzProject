@@ -181,7 +181,7 @@ end
 
 rule"assistance plan 1"
 ruleflow-group"NeurolgyService2"
-salience 4
+salience 2
 when
 syp1:upec.Symptom(description=="Aphasia" )
 plan1:upec.AssistancePlan(this!=null )
@@ -201,7 +201,7 @@ end
 
 rule"assistance plan 3"
 ruleflow-group"NeurolgyService2"
-salience 4
+salience 2
 when
 syp1:upec.Symptom(description=="Apraxia" )
 plan1:upec.AssistancePlan(this!=null )
