@@ -89,20 +89,20 @@ rule"assistance plan 2"
 ruleflow-group"NeurologyService3"
 salience 4
 when
-syp1:upec.Symptom(description=="Cognitive impairment" )
-plan1:upec.AssistancePlan(this!=null )
+syp2:upec.Symptom(description=="Cognitive impairment" )
+plan2:upec.AssistancePlan(this!=null )
 then
-plan1.setDescription("cognitive stimulation and workshops memories");
+plan2.setDescription("cognitive stimulation and workshops memories");
 end
 
 rule"assistance plan 3"
 ruleflow-group"NeurologyService3"
 salience 2
 when
-syp1:upec.Symptom(description=="Apraxia" )
-plan1:upec.AssistancePlan(this!=null )
+syp3:upec.Symptom(description=="Apraxia" )
+plan3:upec.AssistancePlan(this!=null )
 then
-plan1.setDescription("Physical exercises, physiotherapy");
+plan3.setDescription("Physical exercises, physiotherapy");
 end
 
 rule"assistance plan 4"
@@ -110,8 +110,8 @@ ruleflow-group"NeurologyService3"
 salience 4
 when
 npi:upec.NeuropsychologicalParameter(name=="NPI score" && value<16)											
-plan1:upec.AssistancePlan(this!=null )
+plan4:upec.AssistancePlan(this!=null )
 then
-plan1.setDescription("Psychiatric treatment");
+plan4.setDescription("Psychiatric treatment");
 end
 
