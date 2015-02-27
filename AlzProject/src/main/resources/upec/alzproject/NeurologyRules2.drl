@@ -6,7 +6,7 @@ import upec.Treatment;
 import upec.PatientRecord;
 
 rule"reinserting patient symptoms into the wm again"
-ruleflow-group"NeurolgoyService3"
+ruleflow-group"NeurologyService3"
 salience 4
 no-loop true
 when
@@ -109,7 +109,7 @@ rule"assistance plan 4"
 ruleflow-group"NeurologyService3"
 salience 4
 when
-npi:upec.NeuropsychologicalParameter(name=="NPI" && value<16)											
+npi:upec.NeuropsychologicalParameter(name=="NPI score" && value<16)											
 plan1:upec.AssistancePlan(this!=null )
 then
 plan1.setDescription("Psychiatric treatment");
